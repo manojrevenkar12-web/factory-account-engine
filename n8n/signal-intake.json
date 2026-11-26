@@ -1,0 +1,123 @@
+{
+  "name": "FAE: signal intake (job boards and press)",
+  "nodes": [
+    {
+      "id": "bb17ac04-f76a-5faa-9c66-307878a19491",
+      "name": "Every 6 hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "62486cad-5b20-5c2b-9e43-e5b05e20f8cb",
+      "name": "Read job board feed",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "url": "={{ $env.FAE_JOBS_FEED_URL }}"
+      }
+    },
+    {
+      "id": "3cabfa91-c1dc-50d9-8088-482d10de694e",
+      "name": "Map to SignalDoc",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "jsCode": "return $input.all().map((i) => ({ json: { id: i.json.guid ?? i.json.link, source: 'jobboard', publishedAt: (i.json.isoDate ?? '').slice(0, 10), text: `${i.json.title}. ${i.json.contentSnippet ?? ''}`.slice(0, 2000) } }));"
+      }
+    },
+    {
+      "id": "2161248c-5436-5e0b-aa02-66dbd2164310",
+      "name": "Send to engine",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.FAE_URL }}/v1/signals",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ docs: $input.all().map(i => i.json) }) }}",
+        "options": {
+          "batching": {
+            "batch": {
+              "batchSize": 50
+            }
+          }
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "fae-api-key",
+          "name": "factory-account-engine API key"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Every 6 hours": {
+      "main": [
+        [
+          {
+            "node": "Read job board feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read job board feed": {
+      "main": [
+        [
+          {
+            "node": "Map to SignalDoc",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Map to SignalDoc": {
+      "main": [
+        [
+          {
+            "node": "Send to engine",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {}
+}

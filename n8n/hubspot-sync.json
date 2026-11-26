@@ -1,0 +1,130 @@
+{
+  "name": "FAE: nightly HubSpot sync",
+  "nodes": [
+    {
+      "id": "8b9b5e37-92da-5fcd-b4c0-9d7a051431f5",
+      "name": "Nightly 02:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "triggerAtHour": 2
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "5ea56e80-3aaa-581d-9747-c220c1bd6a0f",
+      "name": "Plan sync",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.FAE_URL }}/v1/sync/plan",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth"
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "fae-api-key",
+          "name": "factory-account-engine API key"
+        }
+      }
+    },
+    {
+      "id": "5d929fae-f838-5443-9fac-c14ddc6e029e",
+      "name": "One request per item",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "fieldToSplitOut": "requests"
+      }
+    },
+    {
+      "id": "2f69387c-61b6-599f-9b07-6568f2667a9a",
+      "name": "Call HubSpot",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        0
+      ],
+      "parameters": {
+        "method": "={{ $json.method }}",
+        "url": "=https://api.hubapi.com{{ $json.path }}",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "hubspotAppToken",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.body) }}",
+        "options": {
+          "retry": {
+            "maxTries": 3
+          }
+        }
+      },
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "hubspot",
+          "name": "HubSpot private app"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Nightly 02:00": {
+      "main": [
+        [
+          {
+            "node": "Plan sync",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Plan sync": {
+      "main": [
+        [
+          {
+            "node": "One request per item",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "One request per item": {
+      "main": [
+        [
+          {
+            "node": "Call HubSpot",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {}
+}

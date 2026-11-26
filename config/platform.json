@@ -1,0 +1,23 @@
+{
+  "asOf": "2026-11-01",
+  "capacity": { "accountsPerMonth": 320, "contactsPerAccount": 2 },
+  "costs": { "sdrEurPerHour": 45, "minutesPerTouch": { "email": 3, "phone": 9, "linkedin": 4, "letter": 12 }, "minutesManualResearchPerAccount": 18, "minutesReviewPerAccount": 4 },
+  "enrichment": {
+    "_note": "Hit rates are last month's observed rates per provider, not the truth; the waterfall orders providers by cost per expected hit.",
+    "providers": [
+      { "id": "pool_a", "costEur": 0.1, "fields": ["email"], "observedHitRate": { "Germany": 0.3, "United States": 0.55, "default": 0.35 } },
+      { "id": "pool_b", "costEur": 0.35, "fields": ["email", "phone"], "observedHitRate": { "Germany": 0.5, "United States": 0.7, "default": 0.5 } },
+      { "id": "pool_c", "costEur": 1.1, "fields": ["email", "phone"], "observedHitRate": { "Germany": 0.65, "United States": 0.82, "default": 0.62 } },
+      { "id": "mobile_d", "costEur": 1.9, "fields": ["phone"], "observedHitRate": { "Germany": 0.4, "United States": 0.6, "default": 0.4 } }
+    ],
+    "verifyEmailCostEur": 0.02
+  },
+  "claims": {
+    "minContentCoverage": 0.8,
+    "guardWords": ["only", "never", "always", "all", "every", "guarantee", "guaranteed", "100", "free", "any", "fully"],
+    "fallbackSentence": ""
+  },
+  "signals": { "maxQuoteChars": 400 },
+  "model": { "provider": "anthropic", "model": "claude-haiku-5-5", "maxTokens": 700, "timeoutMs": 10000 },
+  "service": { "port": 8790, "apiKeys": "FAE_API_KEYS", "database": "var/accounts.db" }
+}

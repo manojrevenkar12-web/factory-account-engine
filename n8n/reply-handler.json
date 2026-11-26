@@ -1,0 +1,139 @@
+{
+  "name": "FAE: replies and opt-outs",
+  "nodes": [
+    {
+      "id": "bd420dd6-8257-579e-a24a-bbb58cdb8f88",
+      "name": "Reply webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "fae-reply",
+        "responseMode": "onReceived"
+      }
+    },
+    {
+      "id": "a3b4bad3-e64f-55bf-9f4d-e36dc431e322",
+      "name": "Opt-out?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "combinator": "or",
+          "conditions": [
+            {
+              "leftValue": "={{ $json.body.text.toLowerCase() }}",
+              "rightValue": "stop",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            },
+            {
+              "leftValue": "={{ $json.body.text.toLowerCase() }}",
+              "rightValue": "abmelden",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "94c2ba98-4ed9-5041-95cd-d54f6912e194",
+      "name": "Suppress contact",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        -100
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.FAE_URL }}/v1/suppress",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ contactKey: $json.body.contactKey, reason: 'replied stop' }) }}"
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "fae-api-key",
+          "name": "factory-account-engine API key"
+        }
+      }
+    },
+    {
+      "id": "04b9ee96-9096-5d30-934c-5e46b3595d03",
+      "name": "Task for the SDR",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        100
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.hubapi.com/crm/v3/objects/tasks",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "hubspotAppToken",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ properties: { hs_task_subject: 'Reply from ' + $json.body.contactKey, hs_task_body: $json.body.text.slice(0, 2000), hs_timestamp: new Date().toISOString() } }) }}"
+      },
+      "credentials": {
+        "hubspotAppToken": {
+          "id": "hubspot",
+          "name": "HubSpot private app"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Reply webhook": {
+      "main": [
+        [
+          {
+            "node": "Opt-out?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Opt-out?": {
+      "main": [
+        [
+          {
+            "node": "Suppress contact",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Task for the SDR",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {}
+}

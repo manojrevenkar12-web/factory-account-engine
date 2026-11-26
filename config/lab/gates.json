@@ -1,0 +1,15 @@
+{
+  "_note": "Frozen before the held-out run.",
+  "gates": [
+    { "id": "meetings", "text": "Qualified meetings at least 2.5x today's process", "left": "designs.platform.qualifiedMeetingsPer100Accounts", "op": ">=", "right": "designs.sdr_manual.qualifiedMeetingsPer100Accounts", "factor": 2.5 },
+    { "id": "pipeline", "text": "Pipeline at least 3x today's process", "left": "designs.platform.pipelineEurPerMonth", "op": ">=", "right": "designs.sdr_manual.pipelineEurPerMonth", "factor": 3 },
+    { "id": "cost", "text": "Cost per qualified meeting at most half of enrich-everything", "left": "designs.platform.costEurPerQualifiedMeeting", "op": "<=", "right": "designs.clay_all.costEurPerQualifiedMeeting", "factor": 0.5 },
+    { "id": "enrichment", "text": "Enrichment spend at most 15% of enrich-everything", "left": "designs.platform.enrichmentEurPerMonth", "op": "<=", "right": "designs.clay_all.enrichmentEurPerMonth", "factor": 0.15 },
+    { "id": "law", "text": "No first touch that breaks the country's outreach rules", "left": "designs.platform.violationsPer100Contacts", "op": "==", "right": 0 },
+    { "id": "claims", "text": "At most 5 false claims per 1,000 messages", "left": "designs.platform.unsupportedPer1kMessages", "op": "<=", "right": 5 },
+    { "id": "precision", "text": "At least 85% of accepted signals are true", "left": "designs.platform.signalPrecision", "op": ">=", "right": 0.85 },
+    { "id": "precision_lift", "text": "Validation adds at least 5 points of signal precision", "left": "designs.platform.signalPrecision", "op": ">=", "right": "designs.platform_no_validation.signalPrecision", "factor": 1, "plus": 0.05 },
+    { "id": "duplicates", "text": "Duplicate CRM records at most a tenth of today's", "left": "designs.platform.crmDuplicatesPerMonth", "op": "<=", "right": "designs.sdr_manual.crmDuplicatesPerMonth", "factor": 0.1 },
+    { "id": "plants", "text": "Plant-level beats company-level on pipeline by at least 50%", "left": "designs.platform.pipelineEurPerMonth", "op": ">=", "right": "designs.platform_company_level.pipelineEurPerMonth", "factor": 1.5 }
+  ]
+}

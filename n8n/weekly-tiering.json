@@ -1,0 +1,142 @@
+{
+  "name": "FAE: Monday plant tiers to Slack",
+  "nodes": [
+    {
+      "id": "1f461c6c-389a-548a-b1c4-8db193f46303",
+      "name": "Monday 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "weeks",
+              "triggerAtDay": [
+                1
+              ],
+              "triggerAtHour": 7
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "40304359-8903-5415-8ea6-b5bc8a5e48af",
+      "name": "Score plants",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        0
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $env.FAE_URL }}/v1/score",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth"
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "fae-api-key",
+          "name": "factory-account-engine API key"
+        }
+      }
+    },
+    {
+      "id": "ea92dd92-4858-572f-90ba-5149a365c054",
+      "name": "Only new tier A",
+      "type": "n8n-nodes-base.filter",
+      "typeVersion": 2,
+      "position": [
+        440,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "combinator": "and",
+          "conditions": [
+            {
+              "leftValue": "={{ $json.newTierA.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "a38cef75-822f-5f62-859c-56284ab3d494",
+      "name": "Post to #gtm",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        660,
+        0
+      ],
+      "parameters": {
+        "resource": "message",
+        "operation": "post",
+        "select": "channel",
+        "channelId": {
+          "__rl": true,
+          "mode": "name",
+          "value": "#gtm"
+        },
+        "text": "={{ $json.newTierA.map(p => `\u2022 ${p.company} ${p.city} (${p.score}): ${p.reasons[1] ?? ''}`).join('\\n') }}"
+      },
+      "credentials": {
+        "slackApi": {
+          "id": "slack",
+          "name": "Slack"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Monday 07:00": {
+      "main": [
+        [
+          {
+            "node": "Score plants",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Score plants": {
+      "main": [
+        [
+          {
+            "node": "Only new tier A",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Only new tier A": {
+      "main": [
+        [
+          {
+            "node": "Post to #gtm",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "pinData": {}
+}

@@ -1,0 +1,27 @@
+{
+  "name": "factory-account-engine",
+  "private": true,
+  "type": "module",
+  "description": "GTM engine for selling factory AI: plant-level accounts from signals, enrichment waterfall, country-aware outreach rules, checked drafts, HubSpot sync, n8n workflows.",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "lab:dev": "node --no-warnings src/lab/cli.ts dev",
+    "lab:heldout": "node --no-warnings src/lab/cli.ts heldout",
+    "lab:check": "node --no-warnings src/lab/cli.ts dev --check && node --no-warnings src/lab/cli.ts gate",
+    "report": "node --no-warnings src/lab/cli.ts report",
+    "demo": "node --no-warnings src/lab/cli.ts demo",
+    "serve": "node --no-warnings src/server/main.ts",
+    "check": "npm run typecheck && npm test && npm run lab:check"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.70.0",
+    "fastify": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "typescript": "~5.9.3",
+    "vitest": "^3.2.4"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "designs": [
+    { "name": "sdr_manual", "kind": "sdr_manual", "label": "Firmographic list, HQ contacts, generic sequence (today)" },
+    { "name": "clay_all", "kind": "clay_all", "label": "Enrich every plant with every provider, AI first lines" },
+    { "name": "model_alone", "kind": "model_alone", "label": "LLM reads, ranks, writes and picks channels" },
+    { "name": "platform", "kind": "platform", "label": "Model reads, code decides" },
+    { "name": "platform_company_level", "kind": "platform", "label": "Platform working companies, not plants", "ablate": ["company_level"] },
+    { "name": "platform_no_validation", "kind": "platform", "label": "Platform without signal validation", "ablate": ["validation"] },
+    { "name": "platform_no_channel_rules", "kind": "platform", "label": "Platform emailing every country", "ablate": ["channel_rules"] },
+    { "name": "platform_no_claim_check", "kind": "platform", "label": "Platform without the claim check", "ablate": ["claim_check"] },
+    { "name": "platform_enrich_all", "kind": "platform", "label": "Platform enriching with every provider", "ablate": ["waterfall"] }
+  ]
+}

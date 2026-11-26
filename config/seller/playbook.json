@@ -1,0 +1,186 @@
+{
+  "_note": "The seller is fictional (Linewise), modeled on a factory-video AI company selling to manual assembly plants. Proof points are demo statements, not real customer results.",
+  "seller": {
+    "name": "Linewise",
+    "product": "shop-floor video analytics for manual assembly lines",
+    "sender": "Lena Brandt, Linewise",
+    "postalAddress": "Linewise GmbH, Musterstraße 1, 10115 Berlin, Germany",
+    "unsubscribe": "Reply 'stop' and we will not contact you again."
+  },
+  "icp": {
+    "industryFit": {
+      "automotive_supplier": 1.0,
+      "electronics": 1.0,
+      "medical_devices": 0.9,
+      "machinery": 0.85,
+      "appliances": 0.9,
+      "energy_equipment": 0.8,
+      "aerospace": 0.7,
+      "process_chemicals": 0.15,
+      "food_beverage": 0.35,
+      "logistics": 0.1
+    },
+    "plantTypeFit": {
+      "manual_assembly": 1.0,
+      "mixed_assembly": 0.7,
+      "automated_assembly": 0.3,
+      "process": 0.1,
+      "warehouse": 0.05
+    },
+    "minLines": 3,
+    "servedCountries": [
+      "Germany",
+      "Austria",
+      "Switzerland",
+      "Poland",
+      "Czechia",
+      "United States",
+      "Mexico",
+      "United Kingdom"
+    ],
+    "plantRoles": [
+      "plant_manager",
+      "head_industrial_engineering",
+      "lean_manager",
+      "production_manager"
+    ],
+    "hqRoles": [
+      "vp_operations"
+    ]
+  },
+  "signals": {
+    "ie_hiring": {
+      "weight": 1.0,
+      "halfLifeDays": 60,
+      "label": "hiring industrial or process engineers (REFA, MTM, time studies)",
+      "evidence": [
+        "industrial engineer",
+        "zeitstudien",
+        "time studies",
+        "refa",
+        "mtm"
+      ]
+    },
+    "lean_hiring": {
+      "weight": 0.7,
+      "halfLifeDays": 60,
+      "label": "hiring lean or continuous-improvement staff",
+      "evidence": [
+        "lean",
+        "continuous improvement",
+        "kaizen",
+        "verbesserungsprozess"
+      ]
+    },
+    "assembler_hiring": {
+      "weight": 0.5,
+      "halfLifeDays": 45,
+      "label": "hiring many assembly workers",
+      "evidence": [
+        "montagemitarbeiter",
+        "assembly technicians",
+        "assemblers"
+      ]
+    },
+    "new_line": {
+      "weight": 1.2,
+      "halfLifeDays": 120,
+      "label": "new production line announced",
+      "evidence": [
+        "neue montagelinie",
+        "new assembly line"
+      ]
+    },
+    "plant_expansion": {
+      "weight": 0.9,
+      "halfLifeDays": 180,
+      "label": "plant expansion announced",
+      "evidence": [
+        "erweitert",
+        "expansion"
+      ]
+    },
+    "reshoring_us": {
+      "weight": 1.1,
+      "halfLifeDays": 180,
+      "label": "production moving to a US plant",
+      "evidence": [
+        "moving production",
+        "verlagert produktion"
+      ]
+    },
+    "closure": {
+      "weight": -3.0,
+      "halfLifeDays": 365,
+      "label": "plant closure or line shutdown",
+      "evidence": [
+        "schließt",
+        "close"
+      ]
+    },
+    "hiring_freeze": {
+      "weight": -0.8,
+      "halfLifeDays": 120,
+      "label": "hiring freeze or short-time work (Kurzarbeit)",
+      "evidence": [
+        "kurzarbeit",
+        "hiring freeze"
+      ]
+    }
+  },
+  "scoring": {
+    "fitWeight": 0.55,
+    "timingWeight": 0.45,
+    "tierA": 0.62,
+    "tierB": 0.42,
+    "signalWindowDays": 270
+  },
+  "proofPoints": [
+    {
+      "id": "pp-cycle",
+      "text": "Linewise measures cycle time per station from overhead video without sensors on the line."
+    },
+    {
+      "id": "pp-privacy",
+      "text": "Video is processed on site and people are blurred before anything is stored."
+    },
+    {
+      "id": "pp-setup",
+      "text": "A pilot line is usually live within 2 weeks of camera installation."
+    },
+    {
+      "id": "pp-ie",
+      "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift."
+    },
+    {
+      "id": "pp-ramp",
+      "text": "New lines use the data to find the bottleneck station during ramp-up."
+    }
+  ],
+  "messageNeutral": [
+    "saw",
+    "your",
+    "posting",
+    "read",
+    "announcement",
+    "linewise",
+    "we",
+    "our",
+    "us",
+    "hi",
+    "hello",
+    "team",
+    "plant",
+    "line",
+    "week",
+    "call",
+    "short",
+    "useful",
+    "would"
+  ],
+  "budgetEurPerAccount": {
+    "A": 4.0,
+    "B": 1.5,
+    "C": 0
+  }
+}

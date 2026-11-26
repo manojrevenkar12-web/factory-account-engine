@@ -1,0 +1,5426 @@
+{
+  "market": {
+    "companies": 160,
+    "plants": 459,
+    "documents": 270,
+    "hubspotRecords": 52,
+    "simulated": true
+  },
+  "signals": {
+    "accepted": 147,
+    "rejected": 96,
+    "companyLevel": 6,
+    "byType": [
+      [
+        "ie_hiring",
+        35
+      ],
+      [
+        "assembler_hiring",
+        32
+      ],
+      [
+        "lean_hiring",
+        25
+      ],
+      [
+        "plant_expansion",
+        19
+      ],
+      [
+        "new_line",
+        14
+      ],
+      [
+        "hiring_freeze",
+        11
+      ],
+      [
+        "reshoring_us",
+        6
+      ],
+      [
+        "closure",
+        5
+      ]
+    ],
+    "recent": [
+      {
+        "docId": "d77-19",
+        "companyKey": "lindauer-logistics.example",
+        "plantKey": "lindauer-logistics.example#paderborn",
+        "type": "closure",
+        "date": "2026-10-29",
+        "quote": "Lindauer Logistics GmbH schließt das Werk Paderborn bis Ende 2027."
+      },
+      {
+        "docId": "d77-243",
+        "companyKey": "halder-sensorik.example",
+        "plantKey": "halder-sensorik.example#ostrava",
+        "type": "assembler_hiring",
+        "date": "2026-10-28",
+        "quote": "Halder Sensorik SE is hiring 33 assembly technicians at its Ostrava plant."
+      },
+      {
+        "docId": "d77-154",
+        "companyKey": "baxter-elektronik.example",
+        "plantKey": "baxter-elektronik.example#wels",
+        "type": "new_line",
+        "date": "2026-10-27",
+        "quote": "Baxter Elektronik AG nimmt im Werk Wels eine neue Montagelinie in Betrieb."
+      },
+      {
+        "docId": "d77-225",
+        "companyKey": "westhoff-medizintechnik.example",
+        "plantKey": "westhoff-medizintechnik.example#queretaro",
+        "type": "ie_hiring",
+        "date": "2026-10-27",
+        "quote": "Westhoff Medizintechnik Sp. z o.o. is hiring an Industrial Engineer for time studies (MTM) at its Queretaro plant."
+      },
+      {
+        "docId": "d77-184",
+        "companyKey": "ellison-power-systems.example",
+        "plantKey": "ellison-power-systems.example#dresden",
+        "type": "assembler_hiring",
+        "date": "2026-10-25",
+        "quote": "Ellison Power Systems GmbH sucht 39 Montagemitarbeiter (m/w/d) im Werk Dresden."
+      },
+      {
+        "docId": "d77-232",
+        "companyKey": "dunmore-fahrzeugtechnik.example",
+        "plantKey": "dunmore-fahrzeugtechnik.example#winterthur",
+        "type": "assembler_hiring",
+        "date": "2026-10-24",
+        "quote": "Dunmore Fahrzeugtechnik AG sucht 35 Montagemitarbeiter (m/w/d) im Werk Winterthur."
+      },
+      {
+        "docId": "d77-120",
+        "companyKey": "halder-machinery.example",
+        "plantKey": "halder-machinery.example#columbus",
+        "type": "ie_hiring",
+        "date": "2026-10-23",
+        "quote": "Halder Machinery Inc. is hiring an Industrial Engineer for time studies (MTM) at its Columbus plant."
+      },
+      {
+        "docId": "d77-153",
+        "companyKey": "nordtal-drive-systems.example",
+        "plantKey": "nordtal-drive-systems.example#bielefeld",
+        "type": "plant_expansion",
+        "date": "2026-10-22",
+        "quote": "Nordtal Drive Systems erweitert das Werk Bielefeld um eine neue Montagehalle."
+      },
+      {
+        "docId": "d77-252",
+        "companyKey": "dunmore-automotive.example",
+        "plantKey": "dunmore-automotive.example#huntsville",
+        "type": "reshoring_us",
+        "date": "2026-10-22",
+        "quote": "Dunmore Automotive Inc. is moving production from Asia to its Huntsville plant."
+      },
+      {
+        "docId": "d77-152",
+        "companyKey": "nordtal-drive-systems.example",
+        "plantKey": "nordtal-drive-systems.example#bielefeld",
+        "type": "lean_hiring",
+        "date": "2026-10-20",
+        "quote": "Nordtal Drive Systems GmbH & Co. KG sucht Lean Manager (m/w/d) für das Werk Bielefeld."
+      },
+      {
+        "docId": "d77-45",
+        "companyKey": "carver-elektronik.example",
+        "plantKey": "carver-elektronik.example#bielefeld",
+        "type": "hiring_freeze",
+        "date": "2026-10-19",
+        "quote": "Carver Elektronik SE kündigt Kurzarbeit im Werk Bielefeld an."
+      },
+      {
+        "docId": "d77-135",
+        "companyKey": "fairbank-medizintechnik.example",
+        "plantKey": "fairbank-medizintechnik.example#dresden",
+        "type": "ie_hiring",
+        "date": "2026-10-19",
+        "quote": "Fairbank Medizintechnik AG sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Dresden."
+      }
+    ]
+  },
+  "tiers": {
+    "A": 16,
+    "B": 58,
+    "C": 385
+  },
+  "accounts": [
+    {
+      "plantKey": "nordtal-drive-systems.example#bielefeld",
+      "company": "Nordtal Drive Systems GmbH & Co. KG",
+      "city": "Bielefeld",
+      "country": "Germany",
+      "industry": "automotive_supplier",
+      "tier": "A",
+      "score": 0.897,
+      "fit": 1,
+      "timing": 0.771,
+      "reasons": [
+        "fit 1: automotive_supplier 1, manual_assembly 1, 7 lines 1",
+        "lean_hiring on 2026-10-20: +0.609",
+        "plant_expansion on 2026-10-22: +0.866"
+      ],
+      "signal": {
+        "docId": "d77-153",
+        "companyKey": "nordtal-drive-systems.example",
+        "plantKey": "nordtal-drive-systems.example#bielefeld",
+        "type": "plant_expansion",
+        "date": "2026-10-22",
+        "quote": "Nordtal Drive Systems erweitert das Werk Bielefeld um eine neue Montagehalle."
+      },
+      "contacts": [
+        {
+          "name": "Lukas Krause",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Nordtal Drive Systems erweitert das Werk Bielefeld um eine neue Montagehalle\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Nordtal Drive Systems erweitert das Werk Bielefeld um eine neue Montagehalle\".",
+                "citation": "sig:d77-153:plant_expansion",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-153:plant_expansion"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Liam Clark",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Nordtal Drive Systems erweitert das Werk Bielefeld um eine neue Montagehalle\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Nordtal Drive Systems erweitert das Werk Bielefeld um eine neue Montagehalle\".",
+                "citation": "sig:d77-153:plant_expansion",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-153:plant_expansion"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "marquardt-drive-systems.example#ulm",
+      "company": "Marquardt Drive Systems GmbH",
+      "city": "Ulm",
+      "country": "Germany",
+      "industry": "automotive_supplier",
+      "tier": "A",
+      "score": 0.85,
+      "fit": 0.8,
+      "timing": 0.911,
+      "reasons": [
+        "fit 0.8: automotive_supplier 1, manual_assembly 1, ? lines 0.8",
+        "lean_hiring on 2026-10-07: +0.524",
+        "new_line on 2026-10-14: +1.082",
+        "plant_expansion on 2026-10-05: +0.811"
+      ],
+      "signal": {
+        "docId": "d77-64",
+        "companyKey": "marquardt-drive-systems.example",
+        "plantKey": "marquardt-drive-systems.example#ulm",
+        "type": "new_line",
+        "date": "2026-10-14",
+        "quote": "Marquardt Drive Systems GmbH nimmt im Werk Ulm eine neue Montagelinie in Betrieb."
+      },
+      "contacts": [
+        {
+          "name": "Jonas Davis",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Marquardt Drive Systems GmbH nimmt im Werk Ulm eine neue Montagelinie in Betrieb\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Marquardt Drive Systems GmbH nimmt im Werk Ulm eine neue Montagelinie in Betrieb\".",
+                "citation": "sig:d77-64:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-64:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ava Schulz",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Marquardt Drive Systems GmbH nimmt im Werk Ulm eine neue Montagelinie in Betrieb\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Marquardt Drive Systems GmbH nimmt im Werk Ulm eine neue Montagelinie in Betrieb\".",
+                "citation": "sig:d77-64:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-64:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "halder-sensorik.example#ostrava",
+      "company": "Halder Sensorik SE",
+      "city": "Ostrava",
+      "country": "Czechia",
+      "industry": "electronics",
+      "tier": "A",
+      "score": 0.818,
+      "fit": 0.8,
+      "timing": 0.839,
+      "reasons": [
+        "fit 0.8: electronics 1, manual_assembly 1, ? lines 0.8",
+        "ie_hiring on 2026-08-15: +0.406",
+        "assembler_hiring on 2026-10-28: +0.47",
+        "new_line on 2026-09-22: +0.952"
+      ],
+      "signal": {
+        "docId": "d77-244",
+        "companyKey": "halder-sensorik.example",
+        "plantKey": "halder-sensorik.example#ostrava",
+        "type": "new_line",
+        "date": "2026-09-22",
+        "quote": "Halder Sensorik SE will start a new assembly line at its Ostrava plant."
+      },
+      "contacts": [
+        {
+          "name": "Olivia Becker",
+          "role": "plant_manager",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Czechia: email needs prior express consent"
+            }
+          ],
+          "basis": "Act 480/2004: commercial email needs prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 3.35,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              },
+              {
+                "provider": "mobile_d",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.9
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Halder Sensorik SE will start a new assembly line at its Ostrava plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Halder Sensorik SE will start a new assembly line at its Ostrava plant\".",
+                "citation": "sig:d77-244:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-244:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Anna Moore",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Czechia: email needs prior express consent"
+            }
+          ],
+          "basis": "Act 480/2004: commercial email needs prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 1.45,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": true,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Halder Sensorik SE will start a new assembly line at its Ostrava plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Halder Sensorik SE will start a new assembly line at its Ostrava plant\".",
+                "citation": "sig:d77-244:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-244:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "fairbank-automotive.example#grand-rapids",
+      "company": "Fairbank Automotive LLC",
+      "city": "Grand Rapids",
+      "country": "United States",
+      "industry": "automotive_supplier",
+      "tier": "A",
+      "score": 0.758,
+      "fit": 1,
+      "timing": 0.462,
+      "reasons": [
+        "fit 1: automotive_supplier 1, manual_assembly 1, 3 lines 1",
+        "reshoring_us on 2026-06-05: +0.62"
+      ],
+      "signal": {
+        "docId": "d77-0",
+        "companyKey": "fairbank-automotive.example",
+        "plantKey": "fairbank-automotive.example#grand-rapids",
+        "type": "reshoring_us",
+        "date": "2026-06-05",
+        "quote": "Fairbank Automotive LLC is moving production from Asia to its Grand Rapids plant."
+      },
+      "contacts": [
+        {
+          "name": "Marta Schulz",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Fairbank Automotive LLC is moving production from Asia to its Grand Rapids plant\". A pilot line is usually live within 2 weeks of camera installation. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Fairbank Automotive LLC is moving production from Asia to its Grand Rapids plant\".",
+                "citation": "sig:d77-0:reshoring_us",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-0:reshoring_us"
+              },
+              {
+                "kind": "fact",
+                "text": "A pilot line is usually live within 2 weeks of camera installation.",
+                "citation": "pp-setup",
+                "kept": true,
+                "reason": "100% of terms in pp-setup"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Emma Miller",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Fairbank Automotive LLC is moving production from Asia to its Grand Rapids plant\". A pilot line is usually live within 2 weeks of camera installation. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Fairbank Automotive LLC is moving production from Asia to its Grand Rapids plant\".",
+                "citation": "sig:d77-0:reshoring_us",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-0:reshoring_us"
+              },
+              {
+                "kind": "fact",
+                "text": "A pilot line is usually live within 2 weeks of camera installation.",
+                "citation": "pp-setup",
+                "kept": true,
+                "reason": "100% of terms in pp-setup"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "baxter-elektronik.example#wels",
+      "company": "Baxter Elektronik AG",
+      "city": "Wels",
+      "country": "Austria",
+      "industry": "electronics",
+      "tier": "A",
+      "score": 0.75,
+      "fit": 0.8,
+      "timing": 0.688,
+      "reasons": [
+        "fit 0.8: electronics 1, manual_assembly 1, ? lines 0.8",
+        "new_line on 2026-10-27: +1.166"
+      ],
+      "signal": {
+        "docId": "d77-154",
+        "companyKey": "baxter-elektronik.example",
+        "plantKey": "baxter-elektronik.example#wels",
+        "type": "new_line",
+        "date": "2026-10-27",
+        "quote": "Baxter Elektronik AG nimmt im Werk Wels eine neue Montagelinie in Betrieb."
+      },
+      "contacts": [
+        {
+          "name": "Lukas Brown",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Austria: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Austria: phone needs prior express consent"
+            }
+          ],
+          "basis": "TKG 2021 §174: unsolicited email and calls need prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Baxter Elektronik AG nimmt im Werk Wels eine neue Montagelinie in Betrieb\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Baxter Elektronik AG nimmt im Werk Wels eine neue Montagelinie in Betrieb\".",
+                "citation": "sig:d77-154:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-154:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Olivia Lang",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Austria: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Austria: phone needs prior express consent"
+            }
+          ],
+          "basis": "TKG 2021 §174: unsolicited email and calls need prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Baxter Elektronik AG nimmt im Werk Wels eine neue Montagelinie in Betrieb\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Baxter Elektronik AG nimmt im Werk Wels eine neue Montagelinie in Betrieb\".",
+                "citation": "sig:d77-154:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-154:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "dunmore-automotive.example#huntsville",
+      "company": "Dunmore Automotive LLC",
+      "city": "Huntsville",
+      "country": "United States",
+      "industry": "automotive_supplier",
+      "tier": "A",
+      "score": 0.742,
+      "fit": 0.7,
+      "timing": 0.793,
+      "reasons": [
+        "fit 0.7: automotive_supplier 1, mixed_assembly 0.7, 8 lines 1",
+        "ie_hiring on 2026-09-05: +0.518",
+        "reshoring_us on 2026-10-22: +1.058"
+      ],
+      "signal": {
+        "docId": "d77-252",
+        "companyKey": "dunmore-automotive.example",
+        "plantKey": "dunmore-automotive.example#huntsville",
+        "type": "reshoring_us",
+        "date": "2026-10-22",
+        "quote": "Dunmore Automotive Inc. is moving production from Asia to its Huntsville plant."
+      },
+      "contacts": [
+        {
+          "name": "Liam Krause",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Dunmore Automotive Inc. is moving production from Asia to its Huntsville plant\". A pilot line is usually live within 2 weeks of camera installation. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Dunmore Automotive Inc. is moving production from Asia to its Huntsville plant\".",
+                "citation": "sig:d77-252:reshoring_us",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-252:reshoring_us"
+              },
+              {
+                "kind": "fact",
+                "text": "A pilot line is usually live within 2 weeks of camera installation.",
+                "citation": "pp-setup",
+                "kept": true,
+                "reason": "100% of terms in pp-setup"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Liam Lang",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 3.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              },
+              {
+                "provider": "mobile_d",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.9
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Dunmore Automotive Inc. is moving production from Asia to its Huntsville plant\". A pilot line is usually live within 2 weeks of camera installation. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Dunmore Automotive Inc. is moving production from Asia to its Huntsville plant\".",
+                "citation": "sig:d77-252:reshoring_us",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-252:reshoring_us"
+              },
+              {
+                "kind": "fact",
+                "text": "A pilot line is usually live within 2 weeks of camera installation.",
+                "citation": "pp-setup",
+                "kept": true,
+                "reason": "100% of terms in pp-setup"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "brenner-elektronik.example#chemnitz",
+      "company": "Brenner Elektronik SE",
+      "city": "Chemnitz",
+      "country": "Germany",
+      "industry": "electronics",
+      "tier": "A",
+      "score": 0.716,
+      "fit": 0.8,
+      "timing": 0.614,
+      "reasons": [
+        "fit 0.8: electronics 1, manual_assembly 1, ? lines 0.8",
+        "ie_hiring on 2026-09-07: +0.53",
+        "lean_hiring on 2026-09-18: +0.421"
+      ],
+      "signal": {
+        "docId": "d77-90",
+        "companyKey": "brenner-elektronik.example",
+        "plantKey": "brenner-elektronik.example#chemnitz",
+        "type": "ie_hiring",
+        "date": "2026-09-07",
+        "quote": "Brenner Elektronik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Chemnitz."
+      },
+      "contacts": [
+        {
+          "name": "Mia Clark",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Brenner Elektronik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Chemnitz\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Brenner Elektronik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Chemnitz\".",
+                "citation": "sig:d77-90:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-90:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Jonas Wolf",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Brenner Elektronik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Chemnitz\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Brenner Elektronik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Chemnitz\".",
+                "citation": "sig:d77-90:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-90:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "holloway-automotive.example#greenville",
+      "company": "Holloway Automotive LLC",
+      "city": "Greenville",
+      "country": "United States",
+      "industry": "automotive_supplier",
+      "tier": "A",
+      "score": 0.694,
+      "fit": 0.8,
+      "timing": 0.564,
+      "reasons": [
+        "fit 0.8: automotive_supplier 1, manual_assembly 1, ? lines 0.8",
+        "reshoring_us on 2026-08-20: +0.83"
+      ],
+      "signal": {
+        "docId": "d77-89",
+        "companyKey": "holloway-automotive.example",
+        "plantKey": "holloway-automotive.example#greenville",
+        "type": "reshoring_us",
+        "date": "2026-08-20",
+        "quote": "Holloway Automotive LLC is moving production from Asia to its Greenville plant."
+      },
+      "contacts": [
+        {
+          "name": "Jan Lang",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.82,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Holloway Automotive LLC is moving production from Asia to its Greenville plant\". A pilot line is usually live within 2 weeks of camera installation. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Holloway Automotive LLC is moving production from Asia to its Greenville plant\".",
+                "citation": "sig:d77-89:reshoring_us",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-89:reshoring_us"
+              },
+              {
+                "kind": "fact",
+                "text": "A pilot line is usually live within 2 weeks of camera installation.",
+                "citation": "pp-setup",
+                "kept": true,
+                "reason": "100% of terms in pp-setup"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Tomas Davis",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 1.9,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_c",
+                "field": "email",
+                "hit": false,
+                "costEur": 1.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Holloway Automotive LLC is moving production from Asia to its Greenville plant\". A pilot line is usually live within 2 weeks of camera installation. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Holloway Automotive LLC is moving production from Asia to its Greenville plant\".",
+                "citation": "sig:d77-89:reshoring_us",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-89:reshoring_us"
+              },
+              {
+                "kind": "fact",
+                "text": "A pilot line is usually live within 2 weeks of camera installation.",
+                "citation": "pp-setup",
+                "kept": true,
+                "reason": "100% of terms in pp-setup"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "arnold-drive-systems.example#knoxville",
+      "company": "Arnold Drive Systems GmbH",
+      "city": "Knoxville",
+      "country": "United States",
+      "industry": "automotive_supplier",
+      "tier": "A",
+      "score": 0.692,
+      "fit": 0.7,
+      "timing": 0.682,
+      "reasons": [
+        "fit 0.7: automotive_supplier 1, mixed_assembly 0.7, 8 lines 1",
+        "ie_hiring on 2026-10-04: +0.724",
+        "lean_hiring on 2026-09-18: +0.421"
+      ],
+      "signal": {
+        "docId": "d77-15",
+        "companyKey": "arnold-drive-systems.example",
+        "plantKey": "arnold-drive-systems.example#knoxville",
+        "type": "ie_hiring",
+        "date": "2026-10-04",
+        "quote": "Arnold Drive Systems GmbH is hiring an Industrial Engineer for time studies (MTM) at its Knoxville plant."
+      },
+      "contacts": [
+        {
+          "name": "Jonas Davis",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 3.02,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_c",
+                "field": "email",
+                "hit": true,
+                "costEur": 1.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": [
+              "phone via mobile_d: over the 4 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Arnold Drive Systems GmbH is hiring an Industrial Engineer for time studies (MTM) at its Knoxville plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Arnold Drive Systems GmbH is hiring an Industrial Engineer for time studies (MTM) at its Knoxville plant\".",
+                "citation": "sig:d77-15:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-15:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Felix Huber",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 3.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              },
+              {
+                "provider": "mobile_d",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.9
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Saw your posting: \"Arnold Drive Systems GmbH is hiring an Industrial Engineer for time studies (MTM) at its Knoxville plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Arnold Drive Systems GmbH is hiring an Industrial Engineer for time studies (MTM) at its Knoxville plant\".",
+                "citation": "sig:d77-15:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-15:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "trautwein-automotive.example#augsburg",
+      "company": "Trautwein Automotive GmbH & Co. KG",
+      "city": "Augsburg",
+      "country": "Germany",
+      "industry": "automotive_supplier",
+      "tier": "A",
+      "score": 0.678,
+      "fit": 0.8,
+      "timing": 0.529,
+      "reasons": [
+        "fit 0.8: automotive_supplier 1, manual_assembly 1, ? lines 0.8",
+        "plant_expansion on 2026-09-05: +0.723",
+        "assembler_hiring on 2026-07-08 (company level): +0.029"
+      ],
+      "signal": {
+        "docId": "d77-80",
+        "companyKey": "trautwein-automotive.example",
+        "plantKey": "trautwein-automotive.example#augsburg",
+        "type": "plant_expansion",
+        "date": "2026-09-05",
+        "quote": "Trautwein Automotive GmbH & Co. KG erweitert das Werk Augsburg um eine neue Montagehalle."
+      },
+      "contacts": [
+        {
+          "name": "Lukas Schulz",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Trautwein Automotive GmbH & Co. KG erweitert das Werk Augsburg um eine neue Montagehalle\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Trautwein Automotive GmbH & Co. KG erweitert das Werk Augsburg um eine neue Montagehalle\".",
+                "citation": "sig:d77-80:plant_expansion",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-80:plant_expansion"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Jonas Nowak",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Trautwein Automotive GmbH & Co. KG erweitert das Werk Augsburg um eine neue Montagehalle\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Trautwein Automotive GmbH & Co. KG erweitert das Werk Augsburg um eine neue Montagehalle\".",
+                "citation": "sig:d77-80:plant_expansion",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-80:plant_expansion"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "brenner-machinery.example#spartanburg",
+      "company": "Brenner Machinery GmbH & Co. KG",
+      "city": "Spartanburg",
+      "country": "United States",
+      "industry": "machinery",
+      "tier": "A",
+      "score": 0.676,
+      "fit": 0.85,
+      "timing": 0.463,
+      "reasons": [
+        "fit 0.85: machinery 0.85, manual_assembly 1, 4 lines 1",
+        "new_line on 2026-07-10: +0.621"
+      ],
+      "signal": {
+        "docId": "d77-115",
+        "companyKey": "brenner-machinery.example",
+        "plantKey": "brenner-machinery.example#spartanburg",
+        "type": "new_line",
+        "date": "2026-07-10",
+        "quote": "Brenner Machinery GmbH & Co. KG will start a new assembly line at its Spartanburg plant."
+      },
+      "contacts": [
+        {
+          "name": "Lea Garcia",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Brenner Machinery GmbH & Co. KG will start a new assembly line at its Spartanburg plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Brenner Machinery GmbH & Co. KG will start a new assembly line at its Spartanburg plant\".",
+                "citation": "sig:d77-115:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-115:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Jonas Garcia",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 3.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              },
+              {
+                "provider": "mobile_d",
+                "field": "phone",
+                "hit": true,
+                "costEur": 1.9
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Brenner Machinery GmbH & Co. KG will start a new assembly line at its Spartanburg plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Brenner Machinery GmbH & Co. KG will start a new assembly line at its Spartanburg plant\".",
+                "citation": "sig:d77-115:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-115:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "ostwerk-fahrzeugtechnik.example#stuttgart",
+      "company": "Ostwerk Fahrzeugtechnik SE",
+      "city": "Stuttgart",
+      "country": "Germany",
+      "industry": "automotive_supplier",
+      "tier": "A",
+      "score": 0.675,
+      "fit": 0.56,
+      "timing": 0.816,
+      "reasons": [
+        "fit 0.56: automotive_supplier 1, mixed_assembly 0.7, ? lines 0.8",
+        "ie_hiring on 2026-09-24: +0.645",
+        "assembler_hiring on 2026-10-12: +0.367",
+        "plant_expansion on 2026-08-21: +0.682"
+      ],
+      "signal": {
+        "docId": "d77-36",
+        "companyKey": "ostwerk-fahrzeugtechnik.example",
+        "plantKey": "ostwerk-fahrzeugtechnik.example#stuttgart",
+        "type": "ie_hiring",
+        "date": "2026-09-24",
+        "quote": "Ostwerk Fahrzeugtechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Stuttgart."
+      },
+      "contacts": [
+        {
+          "name": "Tomas Lang",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Ostwerk Fahrzeugtechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Stuttgart\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Ostwerk Fahrzeugtechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Stuttgart\".",
+                "citation": "sig:d77-36:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-36:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Petra Huber",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Ostwerk Fahrzeugtechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Stuttgart\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Ostwerk Fahrzeugtechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Stuttgart\".",
+                "citation": "sig:d77-36:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-36:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "fairbank-medizintechnik.example#dresden",
+      "company": "Fairbank Medizintechnik AG",
+      "city": "Dresden",
+      "country": "Germany",
+      "industry": "medical_devices",
+      "tier": "A",
+      "score": 0.656,
+      "fit": 0.72,
+      "timing": 0.577,
+      "reasons": [
+        "fit 0.72: medical_devices 0.9, manual_assembly 1, ? lines 0.8",
+        "ie_hiring on 2026-10-19: +0.861"
+      ],
+      "signal": {
+        "docId": "d77-135",
+        "companyKey": "fairbank-medizintechnik.example",
+        "plantKey": "fairbank-medizintechnik.example#dresden",
+        "type": "ie_hiring",
+        "date": "2026-10-19",
+        "quote": "Fairbank Medizintechnik AG sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Dresden."
+      },
+      "contacts": [
+        {
+          "name": "Tim Brown",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Fairbank Medizintechnik AG sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Dresden\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Fairbank Medizintechnik AG sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Dresden\".",
+                "citation": "sig:d77-135:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-135:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Liam Garcia",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 0.35,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Saw your posting: \"Fairbank Medizintechnik AG sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Dresden\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Fairbank Medizintechnik AG sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Dresden\".",
+                "citation": "sig:d77-135:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-135:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "granger-sensorik.example#monterrey",
+      "company": "Granger Sensorik S.A.",
+      "city": "Monterrey",
+      "country": "Mexico",
+      "industry": "electronics",
+      "tier": "A",
+      "score": 0.64,
+      "fit": 0.7,
+      "timing": 0.566,
+      "reasons": [
+        "fit 0.7: electronics 1, mixed_assembly 0.7, 3 lines 1",
+        "new_line on 2026-08-30: +0.834"
+      ],
+      "signal": {
+        "docId": "d77-215",
+        "companyKey": "granger-sensorik.example",
+        "plantKey": "granger-sensorik.example#monterrey",
+        "type": "new_line",
+        "date": "2026-08-30",
+        "quote": "Granger Sensorik S.A. will start a new assembly line at its Monterrey plant."
+      },
+      "contacts": [
+        {
+          "name": "Sofia Keller",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "LFPDPPP: opt-out honoured",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 3,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_c",
+                "field": "email",
+                "hit": false,
+                "costEur": 1.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": true,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Granger Sensorik S.A. will start a new assembly line at its Monterrey plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Granger Sensorik S.A. will start a new assembly line at its Monterrey plant\".",
+                "citation": "sig:d77-215:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-215:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Felix Clark",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "LFPDPPP: opt-out honoured",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 3,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_c",
+                "field": "email",
+                "hit": false,
+                "costEur": 1.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": [
+              "phone via mobile_d: over the 4 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Granger Sensorik S.A. will start a new assembly line at its Monterrey plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Granger Sensorik S.A. will start a new assembly line at its Monterrey plant\".",
+                "citation": "sig:d77-215:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-215:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "jessup-electronics.example#columbus",
+      "company": "Jessup Electronics LLC",
+      "city": "Columbus",
+      "country": "United States",
+      "industry": "electronics",
+      "tier": "A",
+      "score": 0.636,
+      "fit": 0.7,
+      "timing": 0.557,
+      "reasons": [
+        "fit 0.7: electronics 1, mixed_assembly 0.7, 3 lines 1",
+        "reshoring_us on 2026-08-15: +0.815"
+      ],
+      "signal": {
+        "docId": "d77-84",
+        "companyKey": "jessup-electronics.example",
+        "plantKey": "jessup-electronics.example#columbus",
+        "type": "reshoring_us",
+        "date": "2026-08-15",
+        "quote": "Jessup Electronics Inc. is moving production from Asia to its Columbus plant."
+      },
+      "contacts": [
+        {
+          "name": "Tomas Wolf",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.82,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Jessup Electronics Inc. is moving production from Asia to its Columbus plant\". A pilot line is usually live within 2 weeks of camera installation. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Jessup Electronics Inc. is moving production from Asia to its Columbus plant\".",
+                "citation": "sig:d77-84:reshoring_us",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-84:reshoring_us"
+              },
+              {
+                "kind": "fact",
+                "text": "A pilot line is usually live within 2 weeks of camera installation.",
+                "citation": "pp-setup",
+                "kept": true,
+                "reason": "100% of terms in pp-setup"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Lukas Moore",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 1.57,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": true,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Jessup Electronics Inc. is moving production from Asia to its Columbus plant\". A pilot line is usually live within 2 weeks of camera installation. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Jessup Electronics Inc. is moving production from Asia to its Columbus plant\".",
+                "citation": "sig:d77-84:reshoring_us",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-84:reshoring_us"
+              },
+              {
+                "kind": "fact",
+                "text": "A pilot line is usually live within 2 weeks of camera installation.",
+                "citation": "pp-setup",
+                "kept": true,
+                "reason": "100% of terms in pp-setup"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "lindauer-energietechnik.example#bielefeld",
+      "company": "Lindauer Energietechnik SE",
+      "city": "Bielefeld",
+      "country": "Germany",
+      "industry": "energy_equipment",
+      "tier": "A",
+      "score": 0.623,
+      "fit": 0.8,
+      "timing": 0.408,
+      "reasons": [
+        "fit 0.8: energy_equipment 0.8, manual_assembly 1, 5 lines 1",
+        "ie_hiring on 2026-09-06: +0.524"
+      ],
+      "signal": {
+        "docId": "d77-173",
+        "companyKey": "lindauer-energietechnik.example",
+        "plantKey": "lindauer-energietechnik.example#bielefeld",
+        "type": "ie_hiring",
+        "date": "2026-09-06",
+        "quote": "Lindauer Energietechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Bielefeld."
+      },
+      "contacts": [
+        {
+          "name": "Tomas Brown",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Lindauer Energietechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Bielefeld\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Lindauer Energietechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Bielefeld\".",
+                "citation": "sig:d77-173:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-173:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sofia Miller",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Lindauer Energietechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Bielefeld\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Lindauer Energietechnik SE sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Bielefeld\".",
+                "citation": "sig:d77-173:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-173:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "dunmore-electronics.example#dayton",
+      "company": "Dunmore Electronics LLC",
+      "city": "Dayton",
+      "country": "United States",
+      "industry": "electronics",
+      "tier": "B",
+      "score": 0.603,
+      "fit": 1,
+      "timing": 0.118,
+      "reasons": [
+        "fit 1: electronics 1, manual_assembly 1, 3 lines 1",
+        "lean_hiring on 2026-09-04 (company level): +0.125"
+      ],
+      "signal": {
+        "docId": "d77-71",
+        "companyKey": "dunmore-electronics.example",
+        "plantKey": null,
+        "type": "lean_hiring",
+        "date": "2026-09-04",
+        "quote": "DE is hiring a Continuous Improvement Lead for its Valenciennes plant."
+      },
+      "contacts": [
+        {
+          "name": "Paul Wolf",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0.8,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "email via pool_c: over the 1.5 EUR budget",
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"DE is hiring a Continuous Improvement Lead for its Valenciennes plant\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"DE is hiring a Continuous Improvement Lead for its Valenciennes plant\".",
+                "citation": "sig:d77-71:lean_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-71:lean_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Olivia Nowak",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"DE is hiring a Continuous Improvement Lead for its Valenciennes plant\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"DE is hiring a Continuous Improvement Lead for its Valenciennes plant\".",
+                "citation": "sig:d77-71:lean_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-71:lean_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "fairbank-machinery.example#wels",
+      "company": "Fairbank Machinery AG",
+      "city": "Wels",
+      "country": "Austria",
+      "industry": "machinery",
+      "tier": "B",
+      "score": 0.601,
+      "fit": 0.468,
+      "timing": 0.764,
+      "reasons": [
+        "fit 0.468: machinery 0.85, plant type unknown 0.55, 13 lines 1",
+        "new_line on 2026-08-15 (company level): +0.268",
+        "lean_hiring on 2026-08-20: +0.301",
+        "new_line on 2026-09-07: +0.873"
+      ],
+      "signal": {
+        "docId": "d77-258",
+        "companyKey": "fairbank-machinery.example",
+        "plantKey": "fairbank-machinery.example#wels",
+        "type": "new_line",
+        "date": "2026-09-07",
+        "quote": "Fairbank Machinery AG nimmt im Werk Wels eine neue Montagelinie in Betrieb."
+      },
+      "contacts": [
+        {
+          "name": "Emma Schulz",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Austria: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Austria: phone needs prior express consent"
+            }
+          ],
+          "basis": "TKG 2021 §174: unsolicited email and calls need prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Fairbank Machinery AG nimmt im Werk Wels eine neue Montagelinie in Betrieb\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Fairbank Machinery AG nimmt im Werk Wels eine neue Montagelinie in Betrieb\".",
+                "citation": "sig:d77-258:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-258:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Lea Schulz",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Austria: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Austria: phone needs prior express consent"
+            }
+          ],
+          "basis": "TKG 2021 §174: unsolicited email and calls need prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Fairbank Machinery AG nimmt im Werk Wels eine neue Montagelinie in Betrieb\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Fairbank Machinery AG nimmt im Werk Wels eine neue Montagelinie in Betrieb\".",
+                "citation": "sig:d77-258:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-258:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "ellison-power-systems.example#regensburg",
+      "company": "Ellison Power Systems GmbH",
+      "city": "Regensburg",
+      "country": "Germany",
+      "industry": "energy_equipment",
+      "tier": "B",
+      "score": 0.599,
+      "fit": 0.64,
+      "timing": 0.548,
+      "reasons": [
+        "fit 0.64: energy_equipment 0.8, manual_assembly 1, ? lines 0.8",
+        "ie_hiring on 2026-10-12: +0.794"
+      ],
+      "signal": {
+        "docId": "d77-186",
+        "companyKey": "ellison-power-systems.example",
+        "plantKey": "ellison-power-systems.example#regensburg",
+        "type": "ie_hiring",
+        "date": "2026-10-12",
+        "quote": "Ellison Power Systems GmbH sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Regensburg."
+      },
+      "contacts": [
+        {
+          "name": "Emma Davis",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Ellison Power Systems GmbH sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Regensburg\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Ellison Power Systems GmbH sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Regensburg\".",
+                "citation": "sig:d77-186:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-186:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Tim Huber",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Ellison Power Systems GmbH sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Regensburg\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Ellison Power Systems GmbH sucht Industrial Engineer (m/w/d) für Zeitstudien nach REFA im Werk Regensburg\".",
+                "citation": "sig:d77-186:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-186:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "vogtland-electronics.example#toledo",
+      "company": "Vogtland Electronics Corp.",
+      "city": "Toledo",
+      "country": "United States",
+      "industry": "electronics",
+      "tier": "B",
+      "score": 0.597,
+      "fit": 0.56,
+      "timing": 0.642,
+      "reasons": [
+        "fit 0.56: electronics 1, mixed_assembly 0.7, ? lines 0.8",
+        "ie_hiring on 2026-10-13: +0.803",
+        "assembler_hiring on 2026-09-10: +0.224"
+      ],
+      "signal": {
+        "docId": "d77-190",
+        "companyKey": "vogtland-electronics.example",
+        "plantKey": "vogtland-electronics.example#toledo",
+        "type": "ie_hiring",
+        "date": "2026-10-13",
+        "quote": "Vogtland Electronics Corp. is hiring an Industrial Engineer for time studies (MTM) at its Toledo plant."
+      },
+      "contacts": [
+        {
+          "name": "Sofia Lang",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Saw your posting: \"Vogtland Electronics Corp. is hiring an Industrial Engineer for time studies (MTM) at its Toledo plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Vogtland Electronics Corp. is hiring an Industrial Engineer for time studies (MTM) at its Toledo plant\".",
+                "citation": "sig:d77-190:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-190:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Petra Becker",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.82,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Saw your posting: \"Vogtland Electronics Corp. is hiring an Industrial Engineer for time studies (MTM) at its Toledo plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Vogtland Electronics Corp. is hiring an Industrial Engineer for time studies (MTM) at its Toledo plant\".",
+                "citation": "sig:d77-190:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-190:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "rothenberg-drive-systems.example#regensburg",
+      "company": "Rothenberg Drive Systems GmbH & Co. KG",
+      "city": "Regensburg",
+      "country": "Germany",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.572,
+      "fit": 0.55,
+      "timing": 0.599,
+      "reasons": [
+        "fit 0.55: automotive_supplier 1, plant type unknown 0.55, 9 lines 1",
+        "new_line on 2026-09-15: +0.915"
+      ],
+      "signal": {
+        "docId": "d77-23",
+        "companyKey": "rothenberg-drive-systems.example",
+        "plantKey": "rothenberg-drive-systems.example#regensburg",
+        "type": "new_line",
+        "date": "2026-09-15",
+        "quote": "Rothenberg Drive Systems GmbH & Co. KG nimmt im Werk Regensburg eine neue Montagelinie in Betrieb."
+      },
+      "contacts": [
+        {
+          "name": "Marta Moore",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Rothenberg Drive Systems GmbH & Co. KG nimmt im Werk Regensburg eine neue Montagelinie in Betrieb\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Rothenberg Drive Systems GmbH & Co. KG nimmt im Werk Regensburg eine neue Montagelinie in Betrieb\".",
+                "citation": "sig:d77-23:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-23:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Mia Moore",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Rothenberg Drive Systems GmbH & Co. KG nimmt im Werk Regensburg eine neue Montagelinie in Betrieb\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Rothenberg Drive Systems GmbH & Co. KG nimmt im Werk Regensburg eine neue Montagelinie in Betrieb\".",
+                "citation": "sig:d77-23:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-23:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "holloway-hausger-te.example#columbus",
+      "company": "Holloway Hausgeräte Inc.",
+      "city": "Columbus",
+      "country": "United States",
+      "industry": "appliances",
+      "tier": "B",
+      "score": 0.568,
+      "fit": 0.72,
+      "timing": 0.383,
+      "reasons": [
+        "fit 0.72: appliances 0.9, manual_assembly 1, ? lines 0.8",
+        "ie_hiring on 2026-08-30: +0.483"
+      ],
+      "signal": {
+        "docId": "d77-41",
+        "companyKey": "holloway-hausger-te.example",
+        "plantKey": "holloway-hausger-te.example#columbus",
+        "type": "ie_hiring",
+        "date": "2026-08-30",
+        "quote": "Holloway Hausgeräte Inc. is hiring an Industrial Engineer for time studies (MTM) at its Columbus plant."
+      },
+      "contacts": [
+        {
+          "name": "Felix Huber",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Holloway Hausgeräte Inc. is hiring an Industrial Engineer for time studies (MTM) at its Columbus plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Holloway Hausgeräte Inc. is hiring an Industrial Engineer for time studies (MTM) at its Columbus plant\".",
+                "citation": "sig:d77-41:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-41:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Emma Novak",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 0.8,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "email via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Holloway Hausgeräte Inc. is hiring an Industrial Engineer for time studies (MTM) at its Columbus plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Holloway Hausgeräte Inc. is hiring an Industrial Engineer for time studies (MTM) at its Columbus plant\".",
+                "citation": "sig:d77-41:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-41:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "holloway-fahrzeugtechnik.example#huntsville",
+      "company": "Holloway Fahrzeugtechnik SE",
+      "city": "Huntsville",
+      "country": "United States",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.566,
+      "fit": 0.7,
+      "timing": 0.402,
+      "reasons": [
+        "fit 0.7: automotive_supplier 1, mixed_assembly 0.7, 6 lines 1",
+        "plant_expansion on 2026-06-09: +0.515"
+      ],
+      "signal": {
+        "docId": "d77-224",
+        "companyKey": "holloway-fahrzeugtechnik.example",
+        "plantKey": "holloway-fahrzeugtechnik.example#huntsville",
+        "type": "plant_expansion",
+        "date": "2026-06-09",
+        "quote": "Holloway Fahrzeugtechnik SE announced an expansion of its Huntsville plant."
+      },
+      "contacts": [
+        {
+          "name": "Olivia Hoffmann",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.82,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Read the announcement: \"Holloway Fahrzeugtechnik SE announced an expansion of its Huntsville plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Holloway Fahrzeugtechnik SE announced an expansion of its Huntsville plant\".",
+                "citation": "sig:d77-224:plant_expansion",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-224:plant_expansion"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Ava Hoffmann",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.82,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Holloway Fahrzeugtechnik SE announced an expansion of its Huntsville plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Holloway Fahrzeugtechnik SE announced an expansion of its Huntsville plant\".",
+                "citation": "sig:d77-224:plant_expansion",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-224:plant_expansion"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "halder-fahrzeugtechnik.example#coventry",
+      "company": "Halder Fahrzeugtechnik Ltd",
+      "city": "Coventry",
+      "country": "United Kingdom",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.563,
+      "fit": 0.44,
+      "timing": 0.713,
+      "reasons": [
+        "fit 0.44: automotive_supplier 1, plant type unknown 0.55, ? lines 0.8",
+        "assembler_hiring on 2026-10-05: +0.33",
+        "new_line on 2026-09-16: +0.92"
+      ],
+      "signal": {
+        "docId": "d77-146",
+        "companyKey": "halder-fahrzeugtechnik.example",
+        "plantKey": "halder-fahrzeugtechnik.example#coventry",
+        "type": "new_line",
+        "date": "2026-09-16",
+        "quote": "Halder Fahrzeugtechnik Ltd will start a new assembly line at its Coventry plant."
+      },
+      "contacts": [
+        {
+          "name": "Anna Nowak",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "PECR: corporate subscribers may be emailed with an opt-out",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Halder Fahrzeugtechnik Ltd will start a new assembly line at its Coventry plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Halder Fahrzeugtechnik Ltd will start a new assembly line at its Coventry plant\".",
+                "citation": "sig:d77-146:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-146:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Marta Novak",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "PECR: corporate subscribers may be emailed with an opt-out",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 0.8,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "email via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Read the announcement: \"Halder Fahrzeugtechnik Ltd will start a new assembly line at its Coventry plant\". New lines use the data to find the bottleneck station during ramp-up. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Read the announcement: \"Halder Fahrzeugtechnik Ltd will start a new assembly line at its Coventry plant\".",
+                "citation": "sig:d77-146:new_line",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-146:new_line"
+              },
+              {
+                "kind": "fact",
+                "text": "New lines use the data to find the bottleneck station during ramp-up.",
+                "citation": "pp-ramp",
+                "kept": true,
+                "reason": "100% of terms in pp-ramp"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "pfalzer-medizintechnik.example#puebla",
+      "company": "Pfalzer Medizintechnik SE",
+      "city": "Puebla",
+      "country": "Mexico",
+      "industry": "medical_devices",
+      "tier": "B",
+      "score": 0.563,
+      "fit": 0.9,
+      "timing": 0.152,
+      "reasons": [
+        "fit 0.9: medical_devices 0.9, manual_assembly 1, 11 lines 1",
+        "assembler_hiring on 2026-08-21: +0.165"
+      ],
+      "signal": {
+        "docId": "d77-157",
+        "companyKey": "pfalzer-medizintechnik.example",
+        "plantKey": "pfalzer-medizintechnik.example#puebla",
+        "type": "assembler_hiring",
+        "date": "2026-08-21",
+        "quote": "Pfalzer Medizintechnik SE is hiring 22 assembly technicians at its Puebla plant."
+      },
+      "contacts": [
+        {
+          "name": "Paul Schulz",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "LFPDPPP: opt-out honoured",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.82,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Pfalzer Medizintechnik SE is hiring 22 assembly technicians at its Puebla plant\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Pfalzer Medizintechnik SE is hiring 22 assembly technicians at its Puebla plant\".",
+                "citation": "sig:d77-157:assembler_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-157:assembler_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Liam Brown",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "LFPDPPP: opt-out honoured",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 0.82,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "email via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Pfalzer Medizintechnik SE is hiring 22 assembly technicians at its Puebla plant\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Pfalzer Medizintechnik SE is hiring 22 assembly technicians at its Puebla plant\".",
+                "citation": "sig:d77-157:assembler_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-157:assembler_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "halder-fahrzeugtechnik.example#derby",
+      "company": "Halder Fahrzeugtechnik Ltd",
+      "city": "Derby",
+      "country": "United Kingdom",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.562,
+      "fit": 0.56,
+      "timing": 0.564,
+      "reasons": [
+        "fit 0.56: automotive_supplier 1, mixed_assembly 0.7, ? lines 0.8",
+        "ie_hiring on 2026-10-16: +0.831"
+      ],
+      "signal": {
+        "docId": "d77-142",
+        "companyKey": "halder-fahrzeugtechnik.example",
+        "plantKey": "halder-fahrzeugtechnik.example#derby",
+        "type": "ie_hiring",
+        "date": "2026-10-16",
+        "quote": "Halder Fahrzeugtechnik is hiring an Industrial Engineer for time studies (MTM) at its Derby plant."
+      },
+      "contacts": [
+        {
+          "name": "Jan Miller",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "PECR: corporate subscribers may be emailed with an opt-out",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0.8,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "email via pool_c: over the 1.5 EUR budget",
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Halder Fahrzeugtechnik is hiring an Industrial Engineer for time studies (MTM) at its Derby plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Halder Fahrzeugtechnik is hiring an Industrial Engineer for time studies (MTM) at its Derby plant\".",
+                "citation": "sig:d77-142:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-142:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Sofia Keller",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "PECR: corporate subscribers may be emailed with an opt-out",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 0.8,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "email via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Halder Fahrzeugtechnik is hiring an Industrial Engineer for time studies (MTM) at its Derby plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Halder Fahrzeugtechnik is hiring an Industrial Engineer for time studies (MTM) at its Derby plant\".",
+                "citation": "sig:d77-142:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-142:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "granger-machinery.example#nuremberg",
+      "company": "Granger Machinery GmbH",
+      "city": "Nuremberg",
+      "country": "Germany",
+      "industry": "machinery",
+      "tier": "B",
+      "score": 0.552,
+      "fit": 0.85,
+      "timing": 0.188,
+      "reasons": [
+        "fit 0.85: machinery 0.85, manual_assembly 1, 6 lines 1",
+        "assembler_hiring on 2026-09-05: +0.208"
+      ],
+      "signal": {
+        "docId": "d77-248",
+        "companyKey": "granger-machinery.example",
+        "plantKey": "granger-machinery.example#nuremberg",
+        "type": "assembler_hiring",
+        "date": "2026-09-05",
+        "quote": "Granger Machinery GmbH sucht 16 Montagemitarbeiter (m/w/d) im Werk Nuremberg."
+      },
+      "contacts": [
+        {
+          "name": "Felix Schulz",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Granger Machinery GmbH sucht 16 Montagemitarbeiter (m/w/d) im Werk Nuremberg\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Granger Machinery GmbH sucht 16 Montagemitarbeiter (m/w/d) im Werk Nuremberg\".",
+                "citation": "sig:d77-248:assembler_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-248:assembler_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Marta Miller",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Granger Machinery GmbH sucht 16 Montagemitarbeiter (m/w/d) im Werk Nuremberg\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Granger Machinery GmbH sucht 16 Montagemitarbeiter (m/w/d) im Werk Nuremberg\".",
+                "citation": "sig:d77-248:assembler_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-248:assembler_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "arnold-fahrzeugtechnik.example#dresden",
+      "company": "Arnold Fahrzeugtechnik GmbH & Co. KG",
+      "city": "Dresden",
+      "country": "Germany",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: automotive_supplier 1, manual_assembly 1, 3 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Ava Krause",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Paul Novak",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "carver-elektronik.example#schweinfurt",
+      "company": "Carver Elektronik SE",
+      "city": "Schweinfurt",
+      "country": "Germany",
+      "industry": "electronics",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: electronics 1, manual_assembly 1, 11 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Ava Garcia",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Liam Lang",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "dunmore-electronics.example#dresden",
+      "company": "Dunmore Electronics LLC",
+      "city": "Dresden",
+      "country": "Germany",
+      "industry": "electronics",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 0.8,
+      "timing": 0.245,
+      "reasons": [
+        "fit 0.8: electronics 1, manual_assembly 1, ? lines 0.8",
+        "lean_hiring on 2026-09-04 (company level): +0.125",
+        "assembler_hiring on 2026-08-17: +0.155"
+      ],
+      "signal": {
+        "docId": "d77-94",
+        "companyKey": "dunmore-electronics.example",
+        "plantKey": "dunmore-electronics.example#dresden",
+        "type": "assembler_hiring",
+        "date": "2026-08-17",
+        "quote": "Dunmore Electronics LLC sucht 43 Montagemitarbeiter (m/w/d) im Werk Dresden."
+      },
+      "contacts": [
+        {
+          "name": "Liam Clark",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Dunmore Electronics LLC sucht 43 Montagemitarbeiter (m/w/d) im Werk Dresden\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Dunmore Electronics LLC sucht 43 Montagemitarbeiter (m/w/d) im Werk Dresden\".",
+                "citation": "sig:d77-94:assembler_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-94:assembler_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Petra Lang",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Dunmore Electronics LLC sucht 43 Montagemitarbeiter (m/w/d) im Werk Dresden\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Dunmore Electronics LLC sucht 43 Montagemitarbeiter (m/w/d) im Werk Dresden\".",
+                "citation": "sig:d77-94:assembler_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-94:assembler_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "granger-automotive.example#nuremberg",
+      "company": "Granger Automotive AG",
+      "city": "Nuremberg",
+      "country": "Germany",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: automotive_supplier 1, manual_assembly 1, 6 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Sofia Brown",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Petra Miller",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "halder-elektronik.example#mlada-boleslav",
+      "company": "Halder Elektronik Sp. z o.o.",
+      "city": "Mlada Boleslav",
+      "country": "Czechia",
+      "industry": "electronics",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: electronics 1, manual_assembly 1, 6 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Lea Becker",
+          "role": "plant_manager",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Czechia: email needs prior express consent"
+            }
+          ],
+          "basis": "Act 480/2004: commercial email needs prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 1.45,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": [
+              "phone via mobile_d: over the 1.5 EUR budget"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Lukas Wolf",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Czechia: email needs prior express consent"
+            }
+          ],
+          "basis": "Act 480/2004: commercial email needs prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 1.45,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": [
+              "phone via mobile_d: over the 1.5 EUR budget"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "jessup-drive-systems.example#stuttgart",
+      "company": "Jessup Drive Systems GmbH & Co. KG",
+      "city": "Stuttgart",
+      "country": "Germany",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: automotive_supplier 1, manual_assembly 1, 6 lines 1",
+        "hiring_freeze on 2026-09-10: -0.592"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Liam Huber",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Liam Hoffmann",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Germany: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Germany: phone needs at least presumed consent with documented evidence"
+            }
+          ],
+          "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "lindauer-fahrzeugtechnik.example#brno",
+      "company": "Lindauer Fahrzeugtechnik s.r.o.",
+      "city": "Brno",
+      "country": "Czechia",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: automotive_supplier 1, manual_assembly 1, 5 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Olivia Huber",
+          "role": "plant_manager",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Czechia: email needs prior express consent"
+            }
+          ],
+          "basis": "Act 480/2004: commercial email needs prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 0.35,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": null
+        },
+        {
+          "name": "Paul Becker",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Czechia: email needs prior express consent"
+            }
+          ],
+          "basis": "Act 480/2004: commercial email needs prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 1.45,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": true,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": []
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "lindauer-fahrzeugtechnik.example#gliwice",
+      "company": "Lindauer Fahrzeugtechnik s.r.o.",
+      "city": "Gliwice",
+      "country": "Poland",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: automotive_supplier 1, manual_assembly 1, 5 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Sofia Lang",
+          "role": "plant_manager",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Poland: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Poland: phone needs prior express consent"
+            }
+          ],
+          "basis": "Telecommunications law: prior consent for direct marketing by email and phone",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Tim Krause",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Poland: email needs prior express consent"
+            },
+            {
+              "channel": "phone",
+              "reason": "Poland: phone needs prior express consent"
+            }
+          ],
+          "basis": "Telecommunications law: prior consent for direct marketing by email and phone",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0,
+            "calls": [],
+            "skipped": [
+              "no allowed channel needs an email or phone number"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "rothenberg-automotive.example#plzen",
+      "company": "Rothenberg Automotive Corp.",
+      "city": "Plzen",
+      "country": "Czechia",
+      "industry": "automotive_supplier",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: automotive_supplier 1, manual_assembly 1, 4 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Ava Novak",
+          "role": "plant_manager",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Czechia: email needs prior express consent"
+            }
+          ],
+          "basis": "Act 480/2004: commercial email needs prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 1.45,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": [
+              "phone via mobile_d: over the 1.5 EUR budget"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Petra Schulz",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "phone",
+            "linkedin",
+            "letter"
+          ],
+          "blocked": [
+            {
+              "channel": "email",
+              "reason": "Czechia: email needs prior express consent"
+            }
+          ],
+          "basis": "Act 480/2004: commercial email needs prior consent",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 1.45,
+            "calls": [
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              },
+              {
+                "provider": "pool_c",
+                "field": "phone",
+                "hit": false,
+                "costEur": 1.1
+              }
+            ],
+            "skipped": [
+              "phone via mobile_d: over the 1.5 EUR budget"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "rothenberg-sensorik.example#queretaro",
+      "company": "Rothenberg Sensorik S.A.",
+      "city": "Queretaro",
+      "country": "Mexico",
+      "industry": "electronics",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: electronics 1, manual_assembly 1, 7 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Lukas Wolf",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "LFPDPPP: opt-out honoured",
+          "enrichment": {
+            "email": false,
+            "phone": false,
+            "spentEur": 0.8,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "email via pool_c: over the 1.5 EUR budget",
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Marta Lang",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "LFPDPPP: opt-out honoured",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "vogtland-electronics.example#grand-rapids",
+      "company": "Vogtland Electronics Corp.",
+      "city": "Grand Rapids",
+      "country": "United States",
+      "industry": "electronics",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: electronics 1, manual_assembly 1, 6 lines 1"
+      ],
+      "signal": null,
+      "contacts": [
+        {
+          "name": "Tomas Nowak",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": null
+        },
+        {
+          "name": "Tomas Brown",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": null
+        }
+      ]
+    },
+    {
+      "plantKey": "zeller-electronics.example#knoxville",
+      "company": "Zeller Electronics Inc.",
+      "city": "Knoxville",
+      "country": "United States",
+      "industry": "electronics",
+      "tier": "B",
+      "score": 0.55,
+      "fit": 1,
+      "timing": 0,
+      "reasons": [
+        "fit 1: electronics 1, manual_assembly 1, 6 lines 1",
+        "assembler_hiring on 2026-02-04: +0.008",
+        "hiring_freeze on 2026-08-30: -0.556"
+      ],
+      "signal": {
+        "docId": "d77-159",
+        "companyKey": "zeller-electronics.example",
+        "plantKey": "zeller-electronics.example#knoxville",
+        "type": "assembler_hiring",
+        "date": "2026-02-04",
+        "quote": "Zeller Electronics Corp. is hiring 15 assembly technicians at its Knoxville plant."
+      },
+      "contacts": [
+        {
+          "name": "Liam Novak",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": false,
+            "phone": true,
+            "spentEur": 0.8,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "email",
+                "hit": false,
+                "costEur": 0.37
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "email via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Zeller Electronics Corp. is hiring 15 assembly technicians at its Knoxville plant\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Zeller Electronics Corp. is hiring 15 assembly technicians at its Knoxville plant\".",
+                "citation": "sig:d77-159:assembler_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-159:assembler_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Marta Krause",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": true,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": true,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": []
+          },
+          "message": {
+            "body": "Saw your posting: \"Zeller Electronics Corp. is hiring 15 assembly technicians at its Knoxville plant\". Linewise measures cycle time per station from overhead video without sensors on the line. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Zeller Electronics Corp. is hiring 15 assembly technicians at its Knoxville plant\".",
+                "citation": "sig:d77-159:assembler_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-159:assembler_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Linewise measures cycle time per station from overhead video without sensors on the line.",
+                "citation": "pp-cycle",
+                "kept": true,
+                "reason": "100% of terms in pp-cycle"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "plantKey": "marquardt-medizintechnik.example#huntsville",
+      "company": "Marquardt Medizintechnik Corp.",
+      "city": "Huntsville",
+      "country": "United States",
+      "industry": "medical_devices",
+      "tier": "B",
+      "score": 0.545,
+      "fit": 0.72,
+      "timing": 0.331,
+      "reasons": [
+        "fit 0.72: medical_devices 0.9, manual_assembly 1, ? lines 0.8",
+        "ie_hiring on 2026-08-14: +0.401"
+      ],
+      "signal": {
+        "docId": "d77-177",
+        "companyKey": "marquardt-medizintechnik.example",
+        "plantKey": "marquardt-medizintechnik.example#huntsville",
+        "type": "ie_hiring",
+        "date": "2026-08-14",
+        "quote": "Marquardt Medizintechnik Corp. is hiring an Industrial Engineer for time studies (MTM) at its Huntsville plant."
+      },
+      "contacts": [
+        {
+          "name": "Emma Clark",
+          "role": "plant_manager",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Marquardt Medizintechnik Corp. is hiring an Industrial Engineer for time studies (MTM) at its Huntsville plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Marquardt Medizintechnik Corp. is hiring an Industrial Engineer for time studies (MTM) at its Huntsville plant\".",
+                "citation": "sig:d77-177:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-177:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Jonas Brown",
+          "role": "head_industrial_engineering",
+          "sequence": [
+            "email",
+            "phone",
+            "linkedin"
+          ],
+          "blocked": [],
+          "basis": "CAN-SPAM: opt-out, postal address, honest subject line",
+          "enrichment": {
+            "email": true,
+            "phone": false,
+            "spentEur": 0.47,
+            "calls": [
+              {
+                "provider": "pool_a",
+                "field": "email",
+                "hit": true,
+                "costEur": 0.12
+              },
+              {
+                "provider": "pool_b",
+                "field": "phone",
+                "hit": false,
+                "costEur": 0.35
+              }
+            ],
+            "skipped": [
+              "phone via pool_c: over the 1.5 EUR budget"
+            ]
+          },
+          "message": {
+            "body": "Saw your posting: \"Marquardt Medizintechnik Corp. is hiring an Industrial Engineer for time studies (MTM) at its Huntsville plant\". Industrial engineers get time studies for every cycle instead of a few samples per shift. Would a short call with your team next week be useful?\n\nLinewise GmbH, Musterstraße 1, 10115 Berlin, Germany\nReply 'stop' and we will not contact you again.",
+            "sendable": true,
+            "sentences": [
+              {
+                "kind": "fact",
+                "text": "Saw your posting: \"Marquardt Medizintechnik Corp. is hiring an Industrial Engineer for time studies (MTM) at its Huntsville plant\".",
+                "citation": "sig:d77-177:ie_hiring",
+                "kept": true,
+                "reason": "100% of terms in sig:d77-177:ie_hiring"
+              },
+              {
+                "kind": "fact",
+                "text": "Industrial engineers get time studies for every cycle instead of a few samples per shift.",
+                "citation": "pp-ie",
+                "kept": true,
+                "reason": "100% of terms in pp-ie"
+              },
+              {
+                "kind": "ask",
+                "text": "Would a short call with your team next week be useful?",
+                "citation": null,
+                "kept": true,
+                "reason": "no factual content"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "sync": {
+    "attachKeys": 12,
+    "companyUpserts": 76,
+    "contactUpserts": 25,
+    "parentChild": 40,
+    "firstRequests": [
+      {
+        "method": "PATCH",
+        "path": "/crm/v3/objects/companies/hs-77-44",
+        "body": {
+          "properties": {
+            "fae_account_key": "trautwein-automotive.example"
+          }
+        }
+      },
+      {
+        "method": "PATCH",
+        "path": "/crm/v3/objects/companies/hs-77-46",
+        "body": {
+          "properties": {
+            "fae_account_key": "jessup-electronics.example"
+          }
+        }
+      },
+      {
+        "method": "PATCH",
+        "path": "/crm/v3/objects/companies/hs-77-36",
+        "body": {
+          "properties": {
+            "fae_account_key": "dunmore-electronics.example"
+          }
+        }
+      }
+    ]
+  },
+  "costs": {
+    "enrichmentEur": 53.57
+  }
+}

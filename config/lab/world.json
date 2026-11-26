@@ -1,0 +1,203 @@
+{
+  "_note": "The market's truth and behaviour. The platform never reads this file; the world never reads config/platform.json or config/seller.",
+  "companiesPerSeed": 900,
+  "asOf": "2026-11-01",
+  "industries": {
+    "automotive_supplier": 22,
+    "electronics": 16,
+    "medical_devices": 9,
+    "machinery": 15,
+    "appliances": 7,
+    "energy_equipment": 8,
+    "aerospace": 4,
+    "process_chemicals": 9,
+    "food_beverage": 6,
+    "logistics": 4
+  },
+  "trueIndustryFit": {
+    "automotive_supplier": 1.0,
+    "electronics": 1.0,
+    "medical_devices": 0.9,
+    "machinery": 0.8,
+    "appliances": 0.9,
+    "energy_equipment": 0.8,
+    "aerospace": 0.7,
+    "process_chemicals": 0.1,
+    "food_beverage": 0.3,
+    "logistics": 0.05
+  },
+  "hqCountry": {
+    "Germany": 46,
+    "United States": 24,
+    "Austria": 6,
+    "Switzerland": 6,
+    "Poland": 4,
+    "Czechia": 3,
+    "United Kingdom": 5,
+    "Mexico": 2,
+    "France": 4
+  },
+  "plantCountryShift": {
+    "same": 0.6,
+    "United States": 0.12,
+    "Poland": 0.08,
+    "Czechia": 0.07,
+    "Mexico": 0.07,
+    "Germany": 0.06
+  },
+  "plantType": {
+    "manual_assembly": 34,
+    "mixed_assembly": 26,
+    "automated_assembly": 18,
+    "process": 14,
+    "warehouse": 8
+  },
+  "directory": {
+    "plantTypeKnown": 0.65,
+    "linesKnown": 0.5
+  },
+  "need": {
+    "minManualIntensity": 0.45,
+    "minLines": 3,
+    "minIndustryFit": 0.7,
+    "inMarketShare": 0.32
+  },
+  "signalRates": {
+    "inMarket": {
+      "ie_hiring": 0.5,
+      "lean_hiring": 0.3,
+      "assembler_hiring": 0.35,
+      "new_line": 0.22,
+      "plant_expansion": 0.18,
+      "reshoring_us": 0.35
+    },
+    "needNotInMarket": {
+      "ie_hiring": 0.1,
+      "lean_hiring": 0.08,
+      "assembler_hiring": 0.15,
+      "new_line": 0.04,
+      "plant_expansion": 0.05,
+      "reshoring_us": 0.05
+    },
+    "noNeed": {
+      "ie_hiring": 0.06,
+      "lean_hiring": 0.05,
+      "assembler_hiring": 0.12,
+      "new_line": 0.04,
+      "plant_expansion": 0.05,
+      "reshoring_us": 0.04
+    },
+    "closure": 0.02,
+    "hiringFreeze": 0.05,
+    "postingUsesHqCity": 0.12,
+    "nameVariant": 0.4,
+    "variantKnownInAccountDb": 0.8,
+    "duplicatePostings": 0.3
+  },
+  "contacts": {
+    "emailExists": {
+      "Germany": 0.75,
+      "Austria": 0.72,
+      "Switzerland": 0.7,
+      "United States": 0.9,
+      "default": 0.8
+    },
+    "phoneExists": 0.7,
+    "emailValid": 0.9,
+    "expressConsent": 0.03,
+    "presumedConsent": 0.07,
+    "suppressed": 0.02
+  },
+  "providers": {
+    "pool_a": {
+      "Germany": 0.26,
+      "United States": 0.58,
+      "default": 0.32
+    },
+    "pool_b": {
+      "Germany": 0.47,
+      "United States": 0.72,
+      "default": 0.5
+    },
+    "pool_c": {
+      "Germany": 0.68,
+      "United States": 0.84,
+      "default": 0.63
+    },
+    "mobile_d": {
+      "Germany": 0.37,
+      "United States": 0.62,
+      "default": 0.4
+    }
+  },
+  "crm": {
+    "existingRecordShare": 0.3,
+    "existingHasDomain": 0.55
+  },
+  "response": {
+    "base": {
+      "email": 0.012,
+      "phone": 0.03,
+      "linkedin": 0.008,
+      "letter": 0.006
+    },
+    "needInMarket": 3.0,
+    "needNotInMarket": 1.1,
+    "noNeed": 0.3,
+    "relevance": {
+      "plantSignal": 2.0,
+      "generic": 1.0,
+      "wrong": 0.4
+    },
+    "role": {
+      "plant": 1.4,
+      "hq": 0.6
+    },
+    "illegalEmailPenalty": 0.6,
+    "meetingGivenReply": {
+      "need": 0.5,
+      "noNeed": 0.3
+    },
+    "hqHandoffLoss": 0.5
+  },
+  "deal": {
+    "opportunityRate": 0.4,
+    "acvEurPerLine": 6000
+  },
+  "reader": {
+    "extractCorrect": 0.9,
+    "cityUsesHq": 0.06,
+    "typeWrong": 0.04,
+    "inventSignal": 0.05,
+    "inventedQuoteNotInDoc": 0.7,
+    "draftCorrect": 0.88,
+    "draftWrongPlace": 0.07,
+    "draftInventedNumber": 0.05,
+    "aloneFollowsLaw": 0.15
+  },
+  "law": {
+    "_note": "The world's own reading of first-touch outreach law, used only to count violations.",
+    "email": {
+      "Germany": "express",
+      "Austria": "express",
+      "Switzerland": "express",
+      "Poland": "express",
+      "Czechia": "express",
+      "France": "express",
+      "United States": "optout",
+      "United Kingdom": "optout",
+      "Mexico": "optout"
+    },
+    "phone": {
+      "Germany": "presumed",
+      "Austria": "express",
+      "Poland": "express",
+      "Switzerland": "any",
+      "Czechia": "any",
+      "France": "any",
+      "United States": "any",
+      "United Kingdom": "any",
+      "Mexico": "any"
+    }
+  }
+}

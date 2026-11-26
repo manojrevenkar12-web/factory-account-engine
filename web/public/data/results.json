@@ -1,0 +1,276 @@
+{
+  "dev": {
+    "run": "dev",
+    "seeds": [
+      201,
+      202,
+      203
+    ],
+    "companiesPerSeed": 900,
+    "configHash": "8409fc508c1e8d99",
+    "designs": {
+      "sdr_manual": {
+        "design": "sdr_manual",
+        "label": "Firmographic list, HQ contacts, generic sequence (today)",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.125,
+        "qualifiedMeetingsPer100Accounts": 3.1,
+        "meetingsPer100Accounts": 3.2,
+        "pipelineEurPerMonth": 80000,
+        "costEurPerQualifiedMeeting": 852,
+        "enrichmentEurPerMonth": 1408,
+        "sdrHoursPerMonth": 158,
+        "violationsPer100Contacts": 72,
+        "unsupportedPer1kMessages": 0,
+        "signalPrecision": null,
+        "crmDuplicatesPerMonth": 76.3
+      },
+      "clay_all": {
+        "design": "clay_all",
+        "label": "Enrich every plant with every provider, AI first lines",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.238,
+        "qualifiedMeetingsPer100Accounts": 5.6,
+        "meetingsPer100Accounts": 6.3,
+        "pipelineEurPerMonth": 268800,
+        "costEurPerQualifiedMeeting": 820,
+        "enrichmentEurPerMonth": 6349,
+        "sdrHoursPerMonth": 187,
+        "violationsPer100Contacts": 76.3,
+        "unsupportedPer1kMessages": 129,
+        "signalPrecision": null,
+        "crmDuplicatesPerMonth": 8
+      },
+      "model_alone": {
+        "design": "model_alone",
+        "label": "LLM reads, ranks, writes and picks channels",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.431,
+        "qualifiedMeetingsPer100Accounts": 2.5,
+        "meetingsPer100Accounts": 2.6,
+        "pipelineEurPerMonth": 139200,
+        "costEurPerQualifiedMeeting": 420,
+        "enrichmentEurPerMonth": 704,
+        "sdrHoursPerMonth": 59,
+        "violationsPer100Contacts": 40.3,
+        "unsupportedPer1kMessages": 238.8,
+        "signalPrecision": 0.791,
+        "crmDuplicatesPerMonth": 63.3
+      },
+      "platform": {
+        "design": "platform",
+        "label": "Model reads, code decides",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.592,
+        "qualifiedMeetingsPer100Accounts": 10.1,
+        "meetingsPer100Accounts": 10.1,
+        "pipelineEurPerMonth": 504000,
+        "costEurPerQualifiedMeeting": 243,
+        "enrichmentEurPerMonth": 452,
+        "sdrHoursPerMonth": 164,
+        "violationsPer100Contacts": 0,
+        "unsupportedPer1kMessages": 0,
+        "signalPrecision": 0.902,
+        "crmDuplicatesPerMonth": 3
+      },
+      "platform_company_level": {
+        "design": "platform_company_level",
+        "label": "Platform working companies, not plants",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.552,
+        "qualifiedMeetingsPer100Accounts": 8.9,
+        "meetingsPer100Accounts": 8.9,
+        "pipelineEurPerMonth": 208000,
+        "costEurPerQualifiedMeeting": 282,
+        "enrichmentEurPerMonth": 396,
+        "sdrHoursPerMonth": 169,
+        "violationsPer100Contacts": 0,
+        "unsupportedPer1kMessages": 0,
+        "signalPrecision": 0.902,
+        "crmDuplicatesPerMonth": 3.7
+      },
+      "platform_no_validation": {
+        "design": "platform_no_validation",
+        "label": "Platform without signal validation",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.597,
+        "qualifiedMeetingsPer100Accounts": 10.2,
+        "meetingsPer100Accounts": 10.2,
+        "pipelineEurPerMonth": 501600,
+        "costEurPerQualifiedMeeting": 244,
+        "enrichmentEurPerMonth": 497,
+        "sdrHoursPerMonth": 166,
+        "violationsPer100Contacts": 0,
+        "unsupportedPer1kMessages": 68.2,
+        "signalPrecision": 0.791,
+        "crmDuplicatesPerMonth": 3
+      },
+      "platform_no_channel_rules": {
+        "design": "platform_no_channel_rules",
+        "label": "Platform emailing every country",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.592,
+        "qualifiedMeetingsPer100Accounts": 10.1,
+        "meetingsPer100Accounts": 10.1,
+        "pipelineEurPerMonth": 511200,
+        "costEurPerQualifiedMeeting": 144,
+        "enrichmentEurPerMonth": 871,
+        "sdrHoursPerMonth": 84,
+        "violationsPer100Contacts": 65,
+        "unsupportedPer1kMessages": 0,
+        "signalPrecision": 0.902,
+        "crmDuplicatesPerMonth": 3
+      },
+      "platform_no_claim_check": {
+        "design": "platform_no_claim_check",
+        "label": "Platform without the claim check",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.592,
+        "qualifiedMeetingsPer100Accounts": 9.3,
+        "meetingsPer100Accounts": 9.3,
+        "pipelineEurPerMonth": 457600,
+        "costEurPerQualifiedMeeting": 265,
+        "enrichmentEurPerMonth": 452,
+        "sdrHoursPerMonth": 165,
+        "violationsPer100Contacts": 0,
+        "unsupportedPer1kMessages": 100.6,
+        "signalPrecision": 0.902,
+        "crmDuplicatesPerMonth": 3
+      },
+      "platform_enrich_all": {
+        "design": "platform_enrich_all",
+        "label": "Platform enriching with every provider",
+        "accountsWorked": 320,
+        "inMarketShareOfWorked": 0.592,
+        "qualifiedMeetingsPer100Accounts": 11.9,
+        "meetingsPer100Accounts": 11.9,
+        "pipelineEurPerMonth": 593600,
+        "costEurPerQualifiedMeeting": 285,
+        "enrichmentEurPerMonth": 3174,
+        "sdrHoursPerMonth": 170,
+        "violationsPer100Contacts": 0,
+        "unsupportedPer1kMessages": 0,
+        "signalPrecision": 0.902,
+        "crmDuplicatesPerMonth": 3
+      }
+    }
+  },
+  "heldout": null,
+  "gates": {
+    "dev": [
+      {
+        "id": "meetings",
+        "text": "Qualified meetings at least 2.5x today's process",
+        "pass": true,
+        "left": 10.1,
+        "right": 7.75,
+        "op": ">="
+      },
+      {
+        "id": "pipeline",
+        "text": "Pipeline at least 3x today's process",
+        "pass": true,
+        "left": 504000,
+        "right": 240000,
+        "op": ">="
+      },
+      {
+        "id": "cost",
+        "text": "Cost per qualified meeting at most half of enrich-everything",
+        "pass": true,
+        "left": 243,
+        "right": 410,
+        "op": "<="
+      },
+      {
+        "id": "enrichment",
+        "text": "Enrichment spend at most 15% of enrich-everything",
+        "pass": true,
+        "left": 452,
+        "right": 952.35,
+        "op": "<="
+      },
+      {
+        "id": "law",
+        "text": "No first touch that breaks the country's outreach rules",
+        "pass": true,
+        "left": 0,
+        "right": 0,
+        "op": "=="
+      },
+      {
+        "id": "claims",
+        "text": "At most 5 false claims per 1,000 messages",
+        "pass": true,
+        "left": 0,
+        "right": 5,
+        "op": "<="
+      },
+      {
+        "id": "precision",
+        "text": "At least 85% of accepted signals are true",
+        "pass": true,
+        "left": 0.902,
+        "right": 0.85,
+        "op": ">="
+      },
+      {
+        "id": "precision_lift",
+        "text": "Validation adds at least 5 points of signal precision",
+        "pass": true,
+        "left": 0.902,
+        "right": 0.841,
+        "op": ">="
+      },
+      {
+        "id": "duplicates",
+        "text": "Duplicate CRM records at most a tenth of today's",
+        "pass": true,
+        "left": 3,
+        "right": 7.63,
+        "op": "<="
+      },
+      {
+        "id": "plants",
+        "text": "Plant-level beats company-level on pipeline by at least 50%",
+        "pass": true,
+        "left": 504000,
+        "right": 312000,
+        "op": ">="
+      }
+    ],
+    "heldout": null
+  },
+  "headline": [
+    {
+      "label": "Qualified meetings vs today",
+      "value": "3.3×",
+      "note": "3.1 → 10.1 per 100 accounts worked"
+    },
+    {
+      "label": "Cost per qualified meeting",
+      "value": "€852 → €243",
+      "note": "enrich-everything: €820"
+    },
+    {
+      "label": "Enrichment spend per month",
+      "value": "€6,349 → €452",
+      "note": "no email bought for a country where it cannot be used"
+    },
+    {
+      "label": "Outreach-law violations",
+      "value": "0",
+      "note": "today: 72 per 100 contacts, mostly cold email to Germany"
+    },
+    {
+      "label": "Signals that are true",
+      "value": "90%",
+      "note": "without validation: 79%; false claims 68.2 → 0 per 1k messages"
+    },
+    {
+      "label": "In-market plants among those worked",
+      "value": "13% → 59%",
+      "note": "plants with a real need and timing this quarter"
+    }
+  ]
+}

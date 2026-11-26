@@ -1,0 +1,16 @@
+{
+  "_note": "Outreach rules per country for a first, unsolicited B2B touch. Configuration for counsel to review, not legal advice.",
+  "default": { "email": "forbidden", "phone": "forbidden", "linkedin": "connect_only", "letter": "allowed", "basis": "unknown country: most restrictive" },
+  "countries": {
+    "Germany": { "email": "express_consent", "phone": "presumed_consent", "linkedin": "connect_only", "letter": "allowed", "basis": "UWG §7(2): email needs prior express consent even B2B; a sales call needs at least presumed consent" },
+    "Austria": { "email": "express_consent", "phone": "express_consent", "linkedin": "connect_only", "letter": "allowed", "basis": "TKG 2021 §174: unsolicited email and calls need prior consent" },
+    "Switzerland": { "email": "express_consent", "phone": "allowed", "linkedin": "connect_only", "letter": "allowed", "basis": "UWG Art. 3(1)(o): mass advertising email needs prior consent" },
+    "Poland": { "email": "express_consent", "phone": "express_consent", "linkedin": "connect_only", "letter": "allowed", "basis": "Telecommunications law: prior consent for direct marketing by email and phone" },
+    "Czechia": { "email": "express_consent", "phone": "allowed", "linkedin": "connect_only", "letter": "allowed", "basis": "Act 480/2004: commercial email needs prior consent" },
+    "United Kingdom": { "email": "allowed_with_optout", "phone": "allowed_unless_tps", "linkedin": "connect_only", "letter": "allowed", "basis": "PECR: corporate subscribers may be emailed with an opt-out" },
+    "United States": { "email": "allowed_with_optout", "phone": "allowed", "linkedin": "connect_only", "letter": "allowed", "basis": "CAN-SPAM: opt-out, postal address, honest subject line" },
+    "Mexico": { "email": "allowed_with_optout", "phone": "allowed", "linkedin": "connect_only", "letter": "allowed", "basis": "LFPDPPP: opt-out honoured" }
+  },
+  "presumedConsentEvidence": ["existing_business_relationship", "met_in_person", "inbound_inquiry"],
+  "expressConsentEvidence": ["webinar_opt_in", "content_download_opt_in", "inbound_inquiry"]
+}
