@@ -11,7 +11,7 @@ import type { ProviderClient } from "../core/enrich/waterfall.ts";
 import type { SignalReader } from "../core/model/readers.ts";
 import type { ChannelRules } from "../core/outreach/channel.ts";
 import { runPipeline } from "../core/pipeline.ts";
-import { validateSignal } from "../core/signals/validate.ts";
+import { dedupeSignals, signalKey, validateSignal } from "../core/signals/validate.ts";
 import type { Company, Contact, Plant, SignalDoc } from "../core/types.ts";
 
 export interface AccountExport {
@@ -51,6 +51,7 @@ export function buildApp(deps: AppDeps): FastifyInstance {
   const plantMap = new Map(data.plants.map((p) => [p.key, p]));
   const evidence = Object.fromEntries(Object.entries(playbook.signals).map(([k, v]) => [k, v.evidence ?? []]));
   let lastTierA = new Set<string>();
+  const observed = new Set<string>();
 
   async function ingest(doc: SignalDoc): Promise<{ accepted: number; duplicates: number; rejected: string[] }> {
     const out = { accepted: 0, duplicates: 0, rejected: [] as string[] };
@@ -59,7 +60,9 @@ export function buildApp(deps: AppDeps): FastifyInstance {
     for (const x of found) {
       const v = validateSignal(x, doc, index, plantMap, platform.asOf, playbook.scoring.signalWindowDays, platform.signals.maxQuoteChars, evidence);
       if (!v.accepted) { out.rejected.push(v.reason); continue; }
-      if (store.addSignal(v.accepted)) out.accepted++; else out.duplicates++;
+      // A posting copied to another board is the same observation: count it once.
+      const k = signalKey(v.accepted);
+      if (!observed.has(k) && store.addSignal(v.accepted)) { observed.add(k); out.accepted++; } else out.duplicates++;
     }
     return out;
   }
@@ -96,7 +99,7 @@ export function buildApp(deps: AppDeps): FastifyInstance {
 
   app.post("/v1/score", async () => {
     const companies = new Map(store.companies().map((c) => [c.key, c]));
-    const signals = store.signals();
+    const signals = dedupeSignals(store.signals());
     const scores = store.plants().map((p) => scorePlant(p, companies.get(p.companyKey) as Company, signals, playbook, platform.asOf));
     const tierA = scores.filter((s) => s.tier === "A");
     const fresh = tierA.filter((s) => !lastTierA.has(s.plantKey));
@@ -117,7 +120,7 @@ export function buildApp(deps: AppDeps): FastifyInstance {
 
   app.post<{ Body: { accountsToWork?: number } }>("/v1/sync/plan", async (req) => {
     const r = await runPipeline(
-      { docs, companies: data.companies, plants: data.plants, aliases: data.aliases, contacts: data.contacts, suppressed: new Set(data.suppressed.filter((k) => store.isSuppressed(k))), hubspot: data.hubspot, accountsToWork: Math.min(500, Number(req.body?.accountsToWork ?? 40)) },
+      { docs, companies: data.companies, plants: data.plants, aliases: data.aliases, contacts: data.contacts, suppressed: new Set(data.suppressed), hubspot: data.hubspot, accountsToWork: Math.min(500, Number(req.body?.accountsToWork ?? 40)) },
       { reader: deps.reader, drafter: null, providers: deps.providers, playbook, channels: deps.channels, platform, store },
     );
     return { accounts: r.accounts.length, enrichmentEur: r.costs.enrichmentEur, requests: r.requests, skipped: r.sync.skipped.length };

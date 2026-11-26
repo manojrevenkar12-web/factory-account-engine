@@ -53,10 +53,21 @@ export async function buildDemo(seed = 77, companies = 160): Promise<{ view: Rec
         message: c.message ? { body: c.message.body, sendable: c.message.sendable, sentences: c.message.sentences } : null,
       })),
     })),
-    sync: { attachKeys: result.sync.keyAttachments.length, companyUpserts: result.sync.companyUpserts.length, contactUpserts: result.sync.contactUpserts.length, parentChild: result.sync.parentChild.length, firstRequests: result.requests.slice(0, 3) },
+    sync: { attachKeys: result.sync.keyAttachments.length, companyUpserts: result.sync.companyUpserts.length, contactUpserts: result.sync.contactUpserts.length, parentChild: result.sync.parentChild.length, firstRequests: onePerKind(result.requests) },
     costs: result.costs,
   };
   // The account export the service loads: what a GTM team would hold in its own database.
   const market = { ...input, suppressed: [...input.suppressed], providerHits: Object.fromEntries(m.contacts.filter((c) => keep.has(c.companyKey)).map((c) => [c.key, { email: world.providerLookup(seed, c, "pool_b", "email"), phone: world.providerLookup(seed, c, "pool_b", "phone"), emailValid: c.emailValid }])) };
   return { view, market };
+}
+
+/** The first request of each kind (method and path without the record id), so the console shows every step of a sync. */
+function onePerKind<T extends { method: string; path: string }>(requests: T[]): T[] {
+  const seen = new Set<string>();
+  return requests.filter((r) => {
+    const kind = `${r.method} ${r.path.replace(/\/[^/]*\d[^/]*$/, "/:id")}`;
+    if (seen.has(kind)) return false;
+    seen.add(kind);
+    return true;
+  });
 }

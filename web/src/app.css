@@ -1,0 +1,29 @@
+.shell { max-inline-size: var(--content-max); margin: 0 auto; padding: 0 var(--space-5) var(--space-7); }
+.top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: var(--space-5); padding: var(--space-5) 0; }
+.brand { display: flex; gap: var(--space-3); align-items: center; }
+.brand-mark { inline-size: var(--space-6); block-size: var(--space-6); background: var(--stripe); border: 2px solid var(--safety); border-radius: var(--radius-control); }
+.brand-name { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; }
+.brand-sub { color: var(--ink-2); font-size: var(--text-sm); }
+.topline { display: flex; gap: var(--space-6); margin: 0; }
+.topline div { display: grid; }
+.topline dt { color: var(--ink-3); font-size: var(--text-xs); }
+.topline dd { margin: 0; font-family: var(--font-display); font-size: var(--text-xl); font-weight: 600; font-variant-numeric: tabular-nums; }
+.topline .is-a { color: var(--safety); }
+.tabs { display: flex; gap: var(--space-5); border-bottom: 2px solid var(--line); overflow-x: auto; }
+.tab { position: relative; padding: var(--space-3) 0; color: var(--ink-2); text-decoration: none; font-weight: 500; white-space: nowrap; }
+.tab[aria-current="page"] { color: var(--ink); }
+.tab-bar { position: absolute; inset-inline: 0; inset-block-end: -2px; block-size: 3px; background: var(--safety); }
+.main { padding-top: var(--space-6); }
+.foot { margin-top: var(--space-7); color: var(--ink-3); font-size: var(--text-xs); }
+.head { display: grid; gap: var(--space-2); margin-bottom: var(--space-6); max-inline-size: var(--measure); }
+.head h1 { font-size: var(--text-2xl); }
+.head p { color: var(--ink-2); }
+.tier { display: inline-grid; place-items: center; inline-size: 1.6rem; block-size: 1.6rem; border-radius: var(--radius-control); font-family: var(--font-display); font-weight: 600; }
+.tier-A { background: var(--safety); color: #fff; }
+.tier-B { background: var(--tier-b-soft); color: var(--tier-b); }
+.tier-C { background: var(--line-soft); color: var(--ink-3); }
+.chip { display: inline-flex; align-items: center; padding: 0 var(--space-2); border-radius: var(--radius-pill); font-size: var(--text-xs); line-height: 1.7; white-space: nowrap; }
+.chip-go { background: var(--go-soft); color: var(--go); }
+.chip-stop { background: var(--stop-soft); color: var(--stop); }
+.chip-neutral { background: var(--line-soft); color: var(--ink-2); }
+.panel { background: var(--panel); border: var(--rule); border-radius: var(--radius-panel); }

@@ -50,11 +50,16 @@ export function validateSignal(
 }
 
 /** One document often appears on several boards; the same company, plant, type and quote counts once. */
+/** Two signals with this key are one observation: the same posting copied to several boards. */
+export function signalKey(s: AcceptedSignal): string {
+  return `${s.companyKey}|${s.plantKey ?? "-"}|${s.type}|${squash(s.quote)}`;
+}
+
 export function dedupeSignals(signals: AcceptedSignal[]): AcceptedSignal[] {
   const seen = new Set<string>();
   const out: AcceptedSignal[] = [];
   for (const s of signals) {
-    const k = `${s.companyKey}|${s.plantKey ?? "-"}|${s.type}|${squash(s.quote)}`;
+    const k = signalKey(s);
     if (seen.has(k)) continue;
     seen.add(k);
     out.push(s);

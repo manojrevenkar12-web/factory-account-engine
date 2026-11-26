@@ -5401,21 +5401,1724 @@
         }
       },
       {
-        "method": "PATCH",
-        "path": "/crm/v3/objects/companies/hs-77-46",
+        "method": "POST",
+        "path": "/crm/v3/objects/companies/batch/upsert",
         "body": {
-          "properties": {
-            "fae_account_key": "jessup-electronics.example"
-          }
+          "inputs": [
+            {
+              "idProperty": "fae_account_key",
+              "id": "fairbank-automotive.example",
+              "properties": {
+                "name": "Fairbank Automotive LLC",
+                "domain": "fairbank-automotive.example",
+                "country": "United States",
+                "industry": "automotive_supplier",
+                "numberofemployees": "3787",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "arnold-drive-systems.example",
+              "properties": {
+                "name": "Arnold Drive Systems GmbH",
+                "domain": "arnold-drive-systems.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "2491",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "rothenberg-drive-systems.example",
+              "properties": {
+                "name": "Rothenberg Drive Systems GmbH & Co. KG",
+                "domain": "rothenberg-drive-systems.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "5677",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "ostwerk-fahrzeugtechnik.example",
+              "properties": {
+                "name": "Ostwerk Fahrzeugtechnik SE",
+                "domain": "ostwerk-fahrzeugtechnik.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "83",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "holloway-hausger-te.example",
+              "properties": {
+                "name": "Holloway Hausgeräte Inc.",
+                "domain": "holloway-hausger-te.example",
+                "country": "United States",
+                "industry": "appliances",
+                "numberofemployees": "13978",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "carver-elektronik.example",
+              "properties": {
+                "name": "Carver Elektronik SE",
+                "domain": "carver-elektronik.example",
+                "country": "Germany",
+                "industry": "electronics",
+                "numberofemployees": "3619",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "rothenberg-sensorik.example",
+              "properties": {
+                "name": "Rothenberg Sensorik S.A.",
+                "domain": "rothenberg-sensorik.example",
+                "country": "Mexico",
+                "industry": "electronics",
+                "numberofemployees": "1778",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "granger-automotive.example",
+              "properties": {
+                "name": "Granger Automotive AG",
+                "domain": "granger-automotive.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "273",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "marquardt-drive-systems.example",
+              "properties": {
+                "name": "Marquardt Drive Systems GmbH",
+                "domain": "marquardt-drive-systems.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "1292",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "trautwein-automotive.example",
+              "properties": {
+                "name": "Trautwein Automotive GmbH & Co. KG",
+                "domain": "trautwein-automotive.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "1169",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "jessup-electronics.example",
+              "properties": {
+                "name": "Jessup Electronics LLC",
+                "domain": "jessup-electronics.example",
+                "country": "United States",
+                "industry": "electronics",
+                "numberofemployees": "277",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "holloway-automotive.example",
+              "properties": {
+                "name": "Holloway Automotive LLC",
+                "domain": "holloway-automotive.example",
+                "country": "United States",
+                "industry": "automotive_supplier",
+                "numberofemployees": "1238",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "brenner-elektronik.example",
+              "properties": {
+                "name": "Brenner Elektronik SE",
+                "domain": "brenner-elektronik.example",
+                "country": "Germany",
+                "industry": "electronics",
+                "numberofemployees": "1600",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "dunmore-electronics.example",
+              "properties": {
+                "name": "Dunmore Electronics LLC",
+                "domain": "dunmore-electronics.example",
+                "country": "United States",
+                "industry": "electronics",
+                "numberofemployees": "3216",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "rothenberg-automotive.example",
+              "properties": {
+                "name": "Rothenberg Automotive Corp.",
+                "domain": "rothenberg-automotive.example",
+                "country": "United States",
+                "industry": "automotive_supplier",
+                "numberofemployees": "2970",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "brenner-machinery.example",
+              "properties": {
+                "name": "Brenner Machinery GmbH & Co. KG",
+                "domain": "brenner-machinery.example",
+                "country": "Germany",
+                "industry": "machinery",
+                "numberofemployees": "498",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "fairbank-medizintechnik.example",
+              "properties": {
+                "name": "Fairbank Medizintechnik AG",
+                "domain": "fairbank-medizintechnik.example",
+                "country": "Germany",
+                "industry": "medical_devices",
+                "numberofemployees": "1093",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "halder-fahrzeugtechnik.example",
+              "properties": {
+                "name": "Halder Fahrzeugtechnik Ltd",
+                "domain": "halder-fahrzeugtechnik.example",
+                "country": "United Kingdom",
+                "industry": "automotive_supplier",
+                "numberofemployees": "8447",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "halder-elektronik.example",
+              "properties": {
+                "name": "Halder Elektronik Sp. z o.o.",
+                "domain": "halder-elektronik.example",
+                "country": "Poland",
+                "industry": "electronics",
+                "numberofemployees": "9675",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "nordtal-drive-systems.example",
+              "properties": {
+                "name": "Nordtal Drive Systems GmbH & Co. KG",
+                "domain": "nordtal-drive-systems.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "1373",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "baxter-elektronik.example",
+              "properties": {
+                "name": "Baxter Elektronik AG",
+                "domain": "baxter-elektronik.example",
+                "country": "Austria",
+                "industry": "electronics",
+                "numberofemployees": "2036",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "pfalzer-medizintechnik.example",
+              "properties": {
+                "name": "Pfalzer Medizintechnik SE",
+                "domain": "pfalzer-medizintechnik.example",
+                "country": "Germany",
+                "industry": "medical_devices",
+                "numberofemployees": "4273",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "zeller-electronics.example",
+              "properties": {
+                "name": "Zeller Electronics Inc.",
+                "domain": "zeller-electronics.example",
+                "country": "United States",
+                "industry": "electronics",
+                "numberofemployees": "2618",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "lindauer-fahrzeugtechnik.example",
+              "properties": {
+                "name": "Lindauer Fahrzeugtechnik s.r.o.",
+                "domain": "lindauer-fahrzeugtechnik.example",
+                "country": "Czechia",
+                "industry": "automotive_supplier",
+                "numberofemployees": "22215",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "lindauer-energietechnik.example",
+              "properties": {
+                "name": "Lindauer Energietechnik SE",
+                "domain": "lindauer-energietechnik.example",
+                "country": "Germany",
+                "industry": "energy_equipment",
+                "numberofemployees": "806",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "marquardt-medizintechnik.example",
+              "properties": {
+                "name": "Marquardt Medizintechnik Corp.",
+                "domain": "marquardt-medizintechnik.example",
+                "country": "United States",
+                "industry": "medical_devices",
+                "numberofemployees": "3548",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "ellison-power-systems.example",
+              "properties": {
+                "name": "Ellison Power Systems GmbH",
+                "domain": "ellison-power-systems.example",
+                "country": "Germany",
+                "industry": "energy_equipment",
+                "numberofemployees": "4323",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "vogtland-electronics.example",
+              "properties": {
+                "name": "Vogtland Electronics Corp.",
+                "domain": "vogtland-electronics.example",
+                "country": "United States",
+                "industry": "electronics",
+                "numberofemployees": "575",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "granger-sensorik.example",
+              "properties": {
+                "name": "Granger Sensorik S.A.",
+                "domain": "granger-sensorik.example",
+                "country": "Mexico",
+                "industry": "electronics",
+                "numberofemployees": "306",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "holloway-fahrzeugtechnik.example",
+              "properties": {
+                "name": "Holloway Fahrzeugtechnik SE",
+                "domain": "holloway-fahrzeugtechnik.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "8032",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "arnold-fahrzeugtechnik.example",
+              "properties": {
+                "name": "Arnold Fahrzeugtechnik GmbH & Co. KG",
+                "domain": "arnold-fahrzeugtechnik.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "405",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "halder-sensorik.example",
+              "properties": {
+                "name": "Halder Sensorik SE",
+                "domain": "halder-sensorik.example",
+                "country": "Germany",
+                "industry": "electronics",
+                "numberofemployees": "195",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "granger-machinery.example",
+              "properties": {
+                "name": "Granger Machinery GmbH",
+                "domain": "granger-machinery.example",
+                "country": "Germany",
+                "industry": "machinery",
+                "numberofemployees": "1630",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "dunmore-automotive.example",
+              "properties": {
+                "name": "Dunmore Automotive LLC",
+                "domain": "dunmore-automotive.example",
+                "country": "United States",
+                "industry": "automotive_supplier",
+                "numberofemployees": "847",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "fairbank-machinery.example",
+              "properties": {
+                "name": "Fairbank Machinery AG",
+                "domain": "fairbank-machinery.example",
+                "country": "Austria",
+                "industry": "machinery",
+                "numberofemployees": "1205",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "jessup-drive-systems.example",
+              "properties": {
+                "name": "Jessup Drive Systems GmbH & Co. KG",
+                "domain": "jessup-drive-systems.example",
+                "country": "Germany",
+                "industry": "automotive_supplier",
+                "numberofemployees": "653",
+                "fae_level": "company"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "nordtal-drive-systems.example#bielefeld",
+              "properties": {
+                "name": "Nordtal Drive Systems GmbH & Co. KG – Bielefeld",
+                "city": "Bielefeld",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.897"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "marquardt-drive-systems.example#ulm",
+              "properties": {
+                "name": "Marquardt Drive Systems GmbH – Ulm",
+                "city": "Ulm",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.85"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "halder-sensorik.example#ostrava",
+              "properties": {
+                "name": "Halder Sensorik SE – Ostrava",
+                "city": "Ostrava",
+                "country": "Czechia",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.818"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "fairbank-automotive.example#grand-rapids",
+              "properties": {
+                "name": "Fairbank Automotive LLC – Grand Rapids",
+                "city": "Grand Rapids",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.758"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "baxter-elektronik.example#wels",
+              "properties": {
+                "name": "Baxter Elektronik AG – Wels",
+                "city": "Wels",
+                "country": "Austria",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.75"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "dunmore-automotive.example#huntsville",
+              "properties": {
+                "name": "Dunmore Automotive LLC – Huntsville",
+                "city": "Huntsville",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.742"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "brenner-elektronik.example#chemnitz",
+              "properties": {
+                "name": "Brenner Elektronik SE – Chemnitz",
+                "city": "Chemnitz",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.716"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "holloway-automotive.example#greenville",
+              "properties": {
+                "name": "Holloway Automotive LLC – Greenville",
+                "city": "Greenville",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.694"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "arnold-drive-systems.example#knoxville",
+              "properties": {
+                "name": "Arnold Drive Systems GmbH – Knoxville",
+                "city": "Knoxville",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.692"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "trautwein-automotive.example#augsburg",
+              "properties": {
+                "name": "Trautwein Automotive GmbH & Co. KG – Augsburg",
+                "city": "Augsburg",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.678"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "brenner-machinery.example#spartanburg",
+              "properties": {
+                "name": "Brenner Machinery GmbH & Co. KG – Spartanburg",
+                "city": "Spartanburg",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.676"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "ostwerk-fahrzeugtechnik.example#stuttgart",
+              "properties": {
+                "name": "Ostwerk Fahrzeugtechnik SE – Stuttgart",
+                "city": "Stuttgart",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.675"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "fairbank-medizintechnik.example#dresden",
+              "properties": {
+                "name": "Fairbank Medizintechnik AG – Dresden",
+                "city": "Dresden",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.656"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "granger-sensorik.example#monterrey",
+              "properties": {
+                "name": "Granger Sensorik S.A. – Monterrey",
+                "city": "Monterrey",
+                "country": "Mexico",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.64"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "jessup-electronics.example#columbus",
+              "properties": {
+                "name": "Jessup Electronics LLC – Columbus",
+                "city": "Columbus",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.636"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "lindauer-energietechnik.example#bielefeld",
+              "properties": {
+                "name": "Lindauer Energietechnik SE – Bielefeld",
+                "city": "Bielefeld",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "A",
+                "fae_score": "0.623"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "dunmore-electronics.example#dayton",
+              "properties": {
+                "name": "Dunmore Electronics LLC – Dayton",
+                "city": "Dayton",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.603"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "fairbank-machinery.example#wels",
+              "properties": {
+                "name": "Fairbank Machinery AG – Wels",
+                "city": "Wels",
+                "country": "Austria",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.601"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "ellison-power-systems.example#regensburg",
+              "properties": {
+                "name": "Ellison Power Systems GmbH – Regensburg",
+                "city": "Regensburg",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.599"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "vogtland-electronics.example#toledo",
+              "properties": {
+                "name": "Vogtland Electronics Corp. – Toledo",
+                "city": "Toledo",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.597"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "rothenberg-drive-systems.example#regensburg",
+              "properties": {
+                "name": "Rothenberg Drive Systems GmbH & Co. KG – Regensburg",
+                "city": "Regensburg",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.572"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "holloway-hausger-te.example#columbus",
+              "properties": {
+                "name": "Holloway Hausgeräte Inc. – Columbus",
+                "city": "Columbus",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.568"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "holloway-fahrzeugtechnik.example#huntsville",
+              "properties": {
+                "name": "Holloway Fahrzeugtechnik SE – Huntsville",
+                "city": "Huntsville",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.566"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "halder-fahrzeugtechnik.example#coventry",
+              "properties": {
+                "name": "Halder Fahrzeugtechnik Ltd – Coventry",
+                "city": "Coventry",
+                "country": "United Kingdom",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.563"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "pfalzer-medizintechnik.example#puebla",
+              "properties": {
+                "name": "Pfalzer Medizintechnik SE – Puebla",
+                "city": "Puebla",
+                "country": "Mexico",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.563"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "halder-fahrzeugtechnik.example#derby",
+              "properties": {
+                "name": "Halder Fahrzeugtechnik Ltd – Derby",
+                "city": "Derby",
+                "country": "United Kingdom",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.562"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "granger-machinery.example#nuremberg",
+              "properties": {
+                "name": "Granger Machinery GmbH – Nuremberg",
+                "city": "Nuremberg",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.552"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "arnold-fahrzeugtechnik.example#dresden",
+              "properties": {
+                "name": "Arnold Fahrzeugtechnik GmbH & Co. KG – Dresden",
+                "city": "Dresden",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "carver-elektronik.example#schweinfurt",
+              "properties": {
+                "name": "Carver Elektronik SE – Schweinfurt",
+                "city": "Schweinfurt",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "dunmore-electronics.example#dresden",
+              "properties": {
+                "name": "Dunmore Electronics LLC – Dresden",
+                "city": "Dresden",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "granger-automotive.example#nuremberg",
+              "properties": {
+                "name": "Granger Automotive AG – Nuremberg",
+                "city": "Nuremberg",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "halder-elektronik.example#mlada-boleslav",
+              "properties": {
+                "name": "Halder Elektronik Sp. z o.o. – Mlada Boleslav",
+                "city": "Mlada Boleslav",
+                "country": "Czechia",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "jessup-drive-systems.example#stuttgart",
+              "properties": {
+                "name": "Jessup Drive Systems GmbH & Co. KG – Stuttgart",
+                "city": "Stuttgart",
+                "country": "Germany",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "lindauer-fahrzeugtechnik.example#brno",
+              "properties": {
+                "name": "Lindauer Fahrzeugtechnik s.r.o. – Brno",
+                "city": "Brno",
+                "country": "Czechia",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "lindauer-fahrzeugtechnik.example#gliwice",
+              "properties": {
+                "name": "Lindauer Fahrzeugtechnik s.r.o. – Gliwice",
+                "city": "Gliwice",
+                "country": "Poland",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "rothenberg-automotive.example#plzen",
+              "properties": {
+                "name": "Rothenberg Automotive Corp. – Plzen",
+                "city": "Plzen",
+                "country": "Czechia",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "rothenberg-sensorik.example#queretaro",
+              "properties": {
+                "name": "Rothenberg Sensorik S.A. – Queretaro",
+                "city": "Queretaro",
+                "country": "Mexico",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "vogtland-electronics.example#grand-rapids",
+              "properties": {
+                "name": "Vogtland Electronics Corp. – Grand Rapids",
+                "city": "Grand Rapids",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "zeller-electronics.example#knoxville",
+              "properties": {
+                "name": "Zeller Electronics Inc. – Knoxville",
+                "city": "Knoxville",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.55"
+              }
+            },
+            {
+              "idProperty": "fae_account_key",
+              "id": "marquardt-medizintechnik.example#huntsville",
+              "properties": {
+                "name": "Marquardt Medizintechnik Corp. – Huntsville",
+                "city": "Huntsville",
+                "country": "United States",
+                "fae_level": "plant",
+                "fae_tier": "B",
+                "fae_score": "0.545"
+              }
+            }
+          ]
         }
       },
       {
-        "method": "PATCH",
-        "path": "/crm/v3/objects/companies/hs-77-36",
+        "method": "POST",
+        "path": "/crm/v3/objects/contacts/batch/upsert",
         "body": {
-          "properties": {
-            "fae_account_key": "dunmore-electronics.example"
-          }
+          "inputs": [
+            {
+              "idProperty": "email",
+              "id": "marta.schulz@fairbank-automotive.example",
+              "properties": {
+                "email": "marta.schulz@fairbank-automotive.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "emma.miller@fairbank-automotive.example",
+              "properties": {
+                "email": "emma.miller@fairbank-automotive.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "liam.krause@dunmore-automotive.example",
+              "properties": {
+                "email": "liam.krause@dunmore-automotive.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "liam.lang@dunmore-automotive.example",
+              "properties": {
+                "email": "liam.lang@dunmore-automotive.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "jan.lang@holloway-automotive.example",
+              "properties": {
+                "email": "jan.lang@holloway-automotive.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "jonas.davis@arnold-drive-systems.example",
+              "properties": {
+                "email": "jonas.davis@arnold-drive-systems.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "felix.huber@arnold-drive-systems.example",
+              "properties": {
+                "email": "felix.huber@arnold-drive-systems.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "lea.garcia@brenner-machinery.example",
+              "properties": {
+                "email": "lea.garcia@brenner-machinery.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "jonas.garcia@brenner-machinery.example",
+              "properties": {
+                "email": "jonas.garcia@brenner-machinery.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "tomas.wolf@jessup-electronics.example",
+              "properties": {
+                "email": "tomas.wolf@jessup-electronics.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "lukas.moore@jessup-electronics.example",
+              "properties": {
+                "email": "lukas.moore@jessup-electronics.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "olivia.nowak@dunmore-electronics.example",
+              "properties": {
+                "email": "olivia.nowak@dunmore-electronics.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "sofia.lang@vogtland-electronics.example",
+              "properties": {
+                "email": "sofia.lang@vogtland-electronics.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "petra.becker@vogtland-electronics.example",
+              "properties": {
+                "email": "petra.becker@vogtland-electronics.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "felix.huber@holloway-hausger-te.example",
+              "properties": {
+                "email": "felix.huber@holloway-hausger-te.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "olivia.hoffmann@holloway-fahrzeugtechnik.example",
+              "properties": {
+                "email": "olivia.hoffmann@holloway-fahrzeugtechnik.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "ava.hoffmann@holloway-fahrzeugtechnik.example",
+              "properties": {
+                "email": "ava.hoffmann@holloway-fahrzeugtechnik.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "anna.nowak@halder-fahrzeugtechnik.example",
+              "properties": {
+                "email": "anna.nowak@halder-fahrzeugtechnik.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "paul.schulz@pfalzer-medizintechnik.example",
+              "properties": {
+                "email": "paul.schulz@pfalzer-medizintechnik.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "marta.lang@rothenberg-sensorik.example",
+              "properties": {
+                "email": "marta.lang@rothenberg-sensorik.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "tomas.nowak@vogtland-electronics.example",
+              "properties": {
+                "email": "tomas.nowak@vogtland-electronics.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "tomas.brown@vogtland-electronics.example",
+              "properties": {
+                "email": "tomas.brown@vogtland-electronics.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "marta.krause@zeller-electronics.example",
+              "properties": {
+                "email": "marta.krause@zeller-electronics.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "emma.clark@marquardt-medizintechnik.example",
+              "properties": {
+                "email": "emma.clark@marquardt-medizintechnik.example",
+                "fae_role": "plant_manager",
+                "fae_consent": "none"
+              }
+            },
+            {
+              "idProperty": "email",
+              "id": "jonas.brown@marquardt-medizintechnik.example",
+              "properties": {
+                "email": "jonas.brown@marquardt-medizintechnik.example",
+                "fae_role": "head_industrial_engineering",
+                "fae_consent": "none"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "method": "POST",
+        "path": "/crm/v4/associations/companies/companies/batch/create",
+        "body": {
+          "inputs": [
+            {
+              "from": {
+                "fae_account_key": "nordtal-drive-systems.example"
+              },
+              "to": {
+                "fae_account_key": "nordtal-drive-systems.example#bielefeld"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "marquardt-drive-systems.example"
+              },
+              "to": {
+                "fae_account_key": "marquardt-drive-systems.example#ulm"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "halder-sensorik.example"
+              },
+              "to": {
+                "fae_account_key": "halder-sensorik.example#ostrava"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "fairbank-automotive.example"
+              },
+              "to": {
+                "fae_account_key": "fairbank-automotive.example#grand-rapids"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "baxter-elektronik.example"
+              },
+              "to": {
+                "fae_account_key": "baxter-elektronik.example#wels"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "dunmore-automotive.example"
+              },
+              "to": {
+                "fae_account_key": "dunmore-automotive.example#huntsville"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "brenner-elektronik.example"
+              },
+              "to": {
+                "fae_account_key": "brenner-elektronik.example#chemnitz"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "holloway-automotive.example"
+              },
+              "to": {
+                "fae_account_key": "holloway-automotive.example#greenville"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "arnold-drive-systems.example"
+              },
+              "to": {
+                "fae_account_key": "arnold-drive-systems.example#knoxville"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "trautwein-automotive.example"
+              },
+              "to": {
+                "fae_account_key": "trautwein-automotive.example#augsburg"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "brenner-machinery.example"
+              },
+              "to": {
+                "fae_account_key": "brenner-machinery.example#spartanburg"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "ostwerk-fahrzeugtechnik.example"
+              },
+              "to": {
+                "fae_account_key": "ostwerk-fahrzeugtechnik.example#stuttgart"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "fairbank-medizintechnik.example"
+              },
+              "to": {
+                "fae_account_key": "fairbank-medizintechnik.example#dresden"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "granger-sensorik.example"
+              },
+              "to": {
+                "fae_account_key": "granger-sensorik.example#monterrey"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "jessup-electronics.example"
+              },
+              "to": {
+                "fae_account_key": "jessup-electronics.example#columbus"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "lindauer-energietechnik.example"
+              },
+              "to": {
+                "fae_account_key": "lindauer-energietechnik.example#bielefeld"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "dunmore-electronics.example"
+              },
+              "to": {
+                "fae_account_key": "dunmore-electronics.example#dayton"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "fairbank-machinery.example"
+              },
+              "to": {
+                "fae_account_key": "fairbank-machinery.example#wels"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "ellison-power-systems.example"
+              },
+              "to": {
+                "fae_account_key": "ellison-power-systems.example#regensburg"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "vogtland-electronics.example"
+              },
+              "to": {
+                "fae_account_key": "vogtland-electronics.example#toledo"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "rothenberg-drive-systems.example"
+              },
+              "to": {
+                "fae_account_key": "rothenberg-drive-systems.example#regensburg"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "holloway-hausger-te.example"
+              },
+              "to": {
+                "fae_account_key": "holloway-hausger-te.example#columbus"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "holloway-fahrzeugtechnik.example"
+              },
+              "to": {
+                "fae_account_key": "holloway-fahrzeugtechnik.example#huntsville"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "halder-fahrzeugtechnik.example"
+              },
+              "to": {
+                "fae_account_key": "halder-fahrzeugtechnik.example#coventry"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "pfalzer-medizintechnik.example"
+              },
+              "to": {
+                "fae_account_key": "pfalzer-medizintechnik.example#puebla"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "halder-fahrzeugtechnik.example"
+              },
+              "to": {
+                "fae_account_key": "halder-fahrzeugtechnik.example#derby"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "granger-machinery.example"
+              },
+              "to": {
+                "fae_account_key": "granger-machinery.example#nuremberg"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "arnold-fahrzeugtechnik.example"
+              },
+              "to": {
+                "fae_account_key": "arnold-fahrzeugtechnik.example#dresden"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "carver-elektronik.example"
+              },
+              "to": {
+                "fae_account_key": "carver-elektronik.example#schweinfurt"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "dunmore-electronics.example"
+              },
+              "to": {
+                "fae_account_key": "dunmore-electronics.example#dresden"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "granger-automotive.example"
+              },
+              "to": {
+                "fae_account_key": "granger-automotive.example#nuremberg"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "halder-elektronik.example"
+              },
+              "to": {
+                "fae_account_key": "halder-elektronik.example#mlada-boleslav"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "jessup-drive-systems.example"
+              },
+              "to": {
+                "fae_account_key": "jessup-drive-systems.example#stuttgart"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "lindauer-fahrzeugtechnik.example"
+              },
+              "to": {
+                "fae_account_key": "lindauer-fahrzeugtechnik.example#brno"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "lindauer-fahrzeugtechnik.example"
+              },
+              "to": {
+                "fae_account_key": "lindauer-fahrzeugtechnik.example#gliwice"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "rothenberg-automotive.example"
+              },
+              "to": {
+                "fae_account_key": "rothenberg-automotive.example#plzen"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "rothenberg-sensorik.example"
+              },
+              "to": {
+                "fae_account_key": "rothenberg-sensorik.example#queretaro"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "vogtland-electronics.example"
+              },
+              "to": {
+                "fae_account_key": "vogtland-electronics.example#grand-rapids"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "zeller-electronics.example"
+              },
+              "to": {
+                "fae_account_key": "zeller-electronics.example#knoxville"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            },
+            {
+              "from": {
+                "fae_account_key": "marquardt-medizintechnik.example"
+              },
+              "to": {
+                "fae_account_key": "marquardt-medizintechnik.example#huntsville"
+              },
+              "types": [
+                {
+                  "associationCategory": "HUBSPOT_DEFINED",
+                  "associationTypeId": 13
+                }
+              ]
+            }
+          ]
         }
       }
     ]

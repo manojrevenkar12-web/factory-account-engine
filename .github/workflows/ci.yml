@@ -1,0 +1,64 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    name: core, lab and generated files
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - name: Dev results reproduce exactly and every gate passes
+        run: npm run lab:check
+      - name: Generated files are up to date
+        run: |
+          npm run demo
+          npm run report
+          git diff --exit-code -- README.md REPORT.md web/public/data data
+
+  web:
+    name: console build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
+        working-directory: web
+      - run: npm run build
+        working-directory: web
+
+  n8n:
+    name: n8n workflows are valid JSON
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: for f in n8n/*.json; do python3 -m json.tool "$f" > /dev/null || exit 1; done
+
+  container:
+    name: service image
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: docker build -t factory-account-engine .
+      - name: Health check
+        run: |
+          docker run -d --name fae -p 8790:8790 factory-account-engine
+          for i in $(seq 1 20); do curl -sf -H 'x-api-key: fae-demo-key' localhost:8790/health && exit 0; sleep 1; done
+          docker logs fae; exit 1

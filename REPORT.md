@@ -35,16 +35,25 @@ Dev seeds 201, 202, 203: a market of 900 manufacturing companies and their plant
 
 | Gate | Dev seeds | Held-out seeds |
 |---|---|---|
-| Qualified meetings at least 2.5x today's process | pass (10.1 >= 7.75) | not run |
-| Pipeline at least 3x today's process | pass (504,000 >= 240,000) | not run |
-| Cost per qualified meeting at most half of enrich-everything | pass (243 <= 410) | not run |
-| Enrichment spend at most 15% of enrich-everything | pass (452 <= 952.35) | not run |
-| No first touch that breaks the country's outreach rules | pass (0 == 0) | not run |
-| At most 5 false claims per 1,000 messages | pass (0 <= 5) | not run |
-| At least 85% of accepted signals are true | pass (0.902 >= 0.85) | not run |
-| Validation adds at least 5 points of signal precision | pass (0.902 >= 0.841) | not run |
-| Duplicate CRM records at most a tenth of today's | pass (3 <= 7.63) | not run |
-| Plant-level beats company-level on pipeline by at least 50% | pass (504,000 >= 312,000) | not run |
+| Qualified meetings at least 2.5x today's process | pass (10.1 >= 7.75) | pass (12.7 >= 8.25) |
+| Pipeline at least 3x today's process | pass (504,000 >= 240,000) | pass (700,800 >= 275,400) |
+| Cost per qualified meeting at most half of enrich-everything | pass (243 <= 410) | pass (189 <= 394) |
+| Enrichment spend at most 15% of enrich-everything | pass (452 <= 952.35) | pass (448 <= 952.35) |
+| No first touch that breaks the country's outreach rules | pass (0 == 0) | pass (0 == 0) |
+| At most 5 false claims per 1,000 messages | pass (0 <= 5) | pass (0 <= 5) |
+| At least 85% of accepted signals are true | pass (0.902 >= 0.85) | pass (0.898 >= 0.85) |
+| Validation adds at least 5 points of signal precision | pass (0.902 >= 0.841) | pass (0.898 >= 0.83) |
+| Duplicate CRM records at most a tenth of today's | pass (3 <= 7.63) | pass (3 <= 9.05) |
+| Plant-level beats company-level on pipeline by at least 50% | pass (504,000 >= 312,000) | pass (700,800 >= 429,300) |
+
+Held-out seeds 9201, 9202 ran once, after the gates were frozen; see `reports/heldout.lock`.
+
+| Design | In-market plants worked | Qualified meetings / 100 accounts | Pipeline / month | Cost per qualified meeting | Enrichment / month | Outreach-law violations / 100 contacts | False claims / 1k messages | Duplicate CRM records / month |
+|---|--:|--:|--:|--:|--:|--:|--:|--:|
+| Firmographic list, HQ contacts, generic sequence (today) | 14% | 3.3 | €92k | €801 | €1,408 | 72 | 0 | 90.5 |
+| Enrich every plant with every provider, AI first lines | 23% | 5.8 | €311k | €788 | €6,349 | 76.3 | 122.2 | 10 |
+| LLM reads, ranks, writes and picks channels | 46% | 1.9 | €134k | €571 | €704 | 41.4 | 236.1 | 69.5 |
+| Model reads, code decides | 59% | 12.7 | €701k | €189 | €448 | 0 | 0 | 3 |
 
 ## All metrics, dev seeds
 

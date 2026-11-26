@@ -20,7 +20,7 @@ describe("service", () => {
     expect((await app.inject({ method: "GET", url: "/health" })).statusCode).toBe(200);
   });
 
-  it("ingests a document once and rejects what it cannot verify", async () => {
+  it("counts a document and its copies on other boards once, and rejects what it cannot verify", async () => {
     const company = data.companies[0] as AccountExport["companies"][number];
     const plant = data.plants.find((p) => p.companyKey === company.key) as AccountExport["plants"][number];
     const doc = { id: "new-1", source: "jobboard", publishedAt: "2026-10-30", text: `${company.name} is hiring an Industrial Engineer for time studies (MTM) at its ${plant.city} plant. The role analyses cycle times.` };
@@ -28,6 +28,8 @@ describe("service", () => {
     const again = (await app.inject({ method: "POST", url: "/v1/signals", headers: auth, payload: { docs: [doc] } })).json() as { accepted: number; duplicates: number };
     expect(first.accepted).toBe(1);
     expect(again).toMatchObject({ accepted: 0, duplicates: 1 });
+    const copy = (await app.inject({ method: "POST", url: "/v1/signals", headers: auth, payload: { docs: [{ ...doc, id: "new-1-other-board" }] } })).json() as { accepted: number; duplicates: number };
+    expect(copy).toMatchObject({ accepted: 0, duplicates: 1 });
     const bad = (await app.inject({ method: "POST", url: "/v1/signals", headers: auth, payload: { docs: [{ id: "x", publishedAt: "2026-10-01", text: "Acme Unknown is hiring an Industrial Engineer for time studies (MTM) at its Nowhere plant." }] } })).json() as { rejected: { reason: string }[] };
     expect(bad.rejected[0]?.reason).toMatch(/does not resolve/);
     expect((await app.inject({ method: "POST", url: "/v1/signals", headers: auth, payload: { docs: [] } })).statusCode).toBe(400);
